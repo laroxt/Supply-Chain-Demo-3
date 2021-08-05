@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>TDA | Create Supply Chain | Company Information</title>
+	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
+
+	<!-- Global stylesheets -->
+	<link href="https//fonts.googleapis.com/css?family=Roboto400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="./global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/form_hide.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="./global_assets/js/main/jquery.min.js"></script>
+	<script src="./global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="./global_assets/js/plugins/loaders/blockui.min.js"></script>
+
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="./global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="./global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script src="./global_assets/js/plugins/forms/wizards/steps.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+	<script src="./global_assets/js/plugins/forms/validation/validate.min.js"></script>
+	<script src="./global_assets/js/plugins/extensions/cookie.js"></script>
+
+	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
+	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+
+	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+	<script src="./global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+	<script src="./global_assets/js/demo_pages/extra_sweetalert.js"></script>
+
+	<script src="./global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+
+
+	<script src="./global_assets/js/plugins/notifications/pnotify.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="./global_assets/js/demo_pages/form_multiselect.js"></script>
+
+
+
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+
+		<!-- Header with logos -->
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="#" class="d-inline-block">
+					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
+						alt="">
+				</a>
+			</div>
+
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="#" class="d-inline-block">
+					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
+						style="width:40px; height: 25px; ">
+				</a>
+			</div>
+		</div>
+		<!-- /header with logos -->
+
+
+		<!-- Mobile controls -->
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="#" class="d-inline-block">
+					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
+						alt="">
+				</a>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+		</div>
+		<!-- /mobile controls -->
+
+
+		<!-- Navbar content -->
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+						<i class="icon-bell3"></i>
+						<span class="d-md-none ml-2">Notifications</span>
+						<span class="badge badge-pill bg-warning-400 ml-auto mt-1 mr-1">9</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-content wmin-md-300">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Notifications</span>
+
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3">
+										<img src="./global_assets/images/placeholders/placeholder2.jpg" width="36"
+											height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Aidan Chong</a>
+										<span class="d-block text-muted font-size-sm">has 'Notified' on this programme
+											SM21</span>
+									</div>
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="text-grey mr-auto">All Notifications</a>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+
+
+					<div class="dropdown-menu dropdown-content wmin-md-300">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Notifications</span>
+
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3">
+										<img src="./global_assets/images/placeholders/placeholder2.jpg" width="36"
+											height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Aidan Chong</a>
+										<span class="d-block text-muted font-size-sm">has closed
+											Project TDA/POD-CEMRT_20/2021/803/909</span>
+									</div>
+
+								</li>
+
+
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="text-grey mr-auto">All Notification</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<span class="badge bg-success-400 badge-pill ml-md-3 mr-md-auto">Online</span>
+
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown dropdown-user">
+					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+						data-toggle="dropdown">
+						<img src="./global_assets/images/placeholders/placeholder2.jpg" class="rounded-circle mr-2"
+							height="34" alt="">
+						<span>Aidan Chong</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="./tda-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
+							Account
+							Settings</a>
+
+						<a href="./index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- /navbar content -->
+
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header">
+							<div class="text-uppercase font-size-xs line-height-xs">tda</div> <i class="icon-menu"
+								title="Main"></i>
+						</li>
+
+						<!-- Company -->
+						<li class="nav-item">
+							<a href="./tda-company-grid.html" class="nav-link ">
+								<i class="icon-magazine"></i>
+								<span>
+									View Company
+								</span>
+							</a>
+						</li>
+						<!-- /Company -->
+
+						<!-- Contracted Supply Chain -->
+						<li class="nav-item">
+							<a href="./tda-project-list-add.html" class="nav-link ">
+								<i class="icon-pencil7"></i>
+								<span>
+									Create Contracted <br> Supply Chain
+								</span>
+							</a>
+						</li>
+						<!-- /Contracted Supply Chain -->
+
+						<!-- Non-Contracted Supply Chain -->
+						<li class="nav-item">
+							<a href="./tda-create-supply-chain-company-info.html" class="nav-link active">
+								<i class="icon-pencil7"></i>
+								<span>
+									Create Non-Contracted <br> Supply Chain
+								</span>
+							</a>
+						</li>
+						<!-- /Non-Contracted Supply Chain -->
+
+
+
+
+						<!-- /Main -->
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex">
+						<div class="breadcrumb">
+							<a href="#" class="breadcrumb-item"> Create Supply Chain</a>
+							<a href="#" class="breadcrumb-item"> Company Information</a>
+						</div>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+
+
+			<!-- Content area -->
+			<div class="content2 pt-0">
+				<div class="row">
+					<!-- card content placement -->
+					<div class="col-md-12">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h5 class="card-title font-weight-bold">Create Supply Chain</h5>
+
+							</div>
+
+							<ul class="nav nav-tabs nav-tabs-bottom bg-light" style="margin-bottom: 0;">
+								<li class="nav-item"><a href="./tda-create-supply-chain-company-info.html"
+										class="nav-link active"> <i class="icon-profile mr-2"></i>Company
+										Information</a>
+								</li>
+								<li class="nav-item"><a href="./tda-create-supply-chain-mf-machineries.html" class="nav-link ">
+										<i class="icon-file-text2 mr-2"></i>Machineries & Facilities Information</a>
+								</li>
+								<li class="nav-item"><a href="./tda-create-supply-chain-material-system.html"
+										class="nav-link "> <i class="icon-file-text2 mr-2"></i>Materials Information</a>
+								</li>
+							</ul>
+
+							<div class="card-body">
+								<div class="row">
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Organization / Company Name:</label>
+											<input type="text" class="form-control" placeholder="Gamuda Sdn Bhd">
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Company Registration Number(SSM) / Unique ID:</label>
+											<input type="text" class="form-control" placeholder="201901000005">
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Organization / Company Type:</label>
+											<select data-placeholder="Select organization / company type"
+												class="form-control select-search" data-fouc>
+												<option></option>
+												<option value="Enterprise (Sole Proprietorship)">Enterprise (Sole
+													Proprietorship)</option>
+												<option value="Enterprise (Partnership)">Enterprise (Partnership)
+												</option>
+												<option value="Sendirian Berhad (Sdn Bhd)/Private Limited Company">
+													Sendirian Berhad (Sdn Bhd)/Private Limited Company</option>
+												<option value="Company Limited by Guarantee (CLG)">Company Limited by
+													Guarantee (CLG)</option>
+
+												<option value="Sendirian (Sdn) / Unlimited Company">Sendirian (Sdn) /
+													Unlimited Company</option>
+												<option value="Berhad (Bhd) / Public Limited Company">Berhad (Bhd) /
+													Public Limited Company</option>
+												<option value="Foreign Company">Foreign Company</option>
+												<option
+													value="Perkongsian Liabiliti Terhad (PLT) / Limited Liability Partnership (LLP)">
+													Perkongsian Liabiliti Terhad (PLT) / Limited Liability Partnership
+													(LLP)</option>
+												<option
+													value="Consortium / joint venture (between local contractor companies)">
+													Consortium / joint venture (between local contractor companies)
+												</option>
+												<option
+													value="Consortium / joint venture (between local and foreign contractors)">
+													Consortium / joint venture (between local and foreign contractors)
+												</option>
+
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>% of Local Equity:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="80">
+												<span class="input-group-append">
+													<span class="input-group-text">%</span>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>% of Foreign Equity:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="20">
+												<span class="input-group-append">
+													<span class="input-group-text">%</span>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Business Proposition & Development:</label>
+											<div class="custom-file">
+												<input type="file" class="custom-file-input" id="customFile">
+												<label class="custom-file-label" for="customFile">Choose
+													file</label>
+											</div>
+											<span class="form-text text-muted">Accepted formats: pdf. docx. Max
+												file
+												size
+												15Mb</span>
+										</div>
+									</div>
+
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Organization / Company Image (Logo):</label>
+											<div class="custom-file">
+												<input type="file" class="custom-file-input" id="customFile">
+												<label class="custom-file-label" for="customFile">Choose
+													file</label>
+											</div>
+											<span class="form-text text-muted">Accepted formats: jpg. png. Max
+												file
+												size
+												15Mb</span>
+										</div>
+									</div>
+
+
+
+									<div class="col-md-6">
+										<label>Date of Incorporation:</label>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<div class="input-group">
+														<span class="input-group-prepend">
+															<span class="input-group-text"><i
+																	class="icon-calendar22"></i></span>
+														</span>
+														<input type="text" class="form-control daterange-single"
+															value="01/01/2021">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Organization / Company Status:</label>
+											<select name="position"
+												data-placeholder="Select organization / company status"
+												class="form-control select-search" data-fouc>
+												<option></option>
+												<option value="distributor">Bumiputera</option>
+												<option value="supplier">Non-Bumiputera</option>
+												<option value="manufacturer">Foreign</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Organization / Company Address:</label>
+											<textarea type="text" class="form-control"
+												placeholder="Example. Menara Gamuda D-16-01, Block D, PJ Trade CentreNo. 8, Jalan PJU 8/8A Bandar Damansara Perdana"
+												rows="4"></textarea>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<div class="form-group">
+											<label>City:</label>
+											<input type="text" class="form-control"
+												placeholder="Example. Petaling Jaya">
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<div class="form-group">
+											<label>State:</label>
+											<input type="text" class="form-control" placeholder="Example. Selangor">
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<div class="form-group">
+											<label>Postal / Zip Code:</label>
+											<input type="text" class="form-control" placeholder="Example. 47820">
+										</div>
+									</div>
+
+
+									<div class="col-md-3">
+										<div class="form-group">
+											<label>Company Origin:</label>
+											<select data-placeholder="Select company origin"
+												class="form-control select-search" data-fouc>
+												<option></option>
+												<option value="">-- select one --</option>
+												<option value="afghan">Afghan</option>
+												<option value="albanian">Albanian</option>
+												<option value="algerian">Algerian</option>
+												<option value="american">American</option>
+												<option value="andorran">Andorran</option>
+												<option value="angolan">Angolan</option>
+												<option value="antiguans">Antiguans</option>
+												<option value="argentinean">Argentinean</option>
+												<option value="armenian">Armenian</option>
+												<option value="australian">Australian</option>
+												<option value="austrian">Austrian</option>
+												<option value="azerbaijani">Azerbaijani</option>
+												<option value="bahamian">Bahamian</option>
+												<option value="bahraini">Bahraini</option>
+												<option value="bangladeshi">Bangladeshi</option>
+												<option value="barbadian">Barbadian</option>
+												<option value="barbudans">Barbudans</option>
+												<option value="batswana">Batswana</option>
+												<option value="belarusian">Belarusian</option>
+												<option value="belgian">Belgian</option>
+												<option value="belizean">Belizean</option>
+												<option value="beninese">Beninese</option>
+												<option value="bhutanese">Bhutanese</option>
+												<option value="bolivian">Bolivian</option>
+												<option value="bosnian">Bosnian</option>
+												<option value="brazilian">Brazilian</option>
+												<option value="british">British</option>
+												<option value="bruneian">Bruneian</option>
+												<option value="bulgarian">Bulgarian</option>
+												<option value="burkinabe">Burkinabe</option>
+												<option value="burmese">Burmese</option>
+												<option value="burundian">Burundian</option>
+												<option value="cambodian">Cambodian</option>
+												<option value="cameroonian">Cameroonian</option>
+												<option value="canadian">Canadian</option>
+												<option value="cape verdean">Cape Verdean</option>
+												<option value="central african">Central African</option>
+												<option value="chadian">Chadian</option>
+												<option value="chilean">Chilean</option>
+												<option value="chinese">Chinese</option>
+												<option value="colombian">Colombian</option>
+												<option value="comoran">Comoran</option>
+												<option value="congolese">Congolese</option>
+												<option value="costa rican">Costa Rican</option>
+												<option value="croatian">Croatian</option>
+												<option value="cuban">Cuban</option>
+												<option value="cypriot">Cypriot</option>
+												<option value="czech">Czech</option>
+												<option value="danish">Danish</option>
+												<option value="djibouti">Djibouti</option>
+												<option value="dominican">Dominican</option>
+												<option value="dutch">Dutch</option>
+												<option value="east timorese">East Timorese</option>
+												<option value="ecuadorean">Ecuadorean</option>
+												<option value="egyptian">Egyptian</option>
+												<option value="emirian">Emirian</option>
+												<option value="equatorial guinean">Equatorial Guinean</option>
+												<option value="eritrean">Eritrean</option>
+												<option value="estonian">Estonian</option>
+												<option value="ethiopian">Ethiopian</option>
+												<option value="fijian">Fijian</option>
+												<option value="filipino">Filipino</option>
+												<option value="finnish">Finnish</option>
+												<option value="french">French</option>
+												<option value="gabonese">Gabonese</option>
+												<option value="gambian">Gambian</option>
+												<option value="georgian">Georgian</option>
+												<option value="german">German</option>
+												<option value="ghanaian">Ghanaian</option>
+												<option value="greek">Greek</option>
+												<option value="grenadian">Grenadian</option>
+												<option value="guatemalan">Guatemalan</option>
+												<option value="guinea-bissauan">Guinea-Bissauan</option>
+												<option value="guinean">Guinean</option>
+												<option value="guyanese">Guyanese</option>
+												<option value="haitian">Haitian</option>
+												<option value="herzegovinian">Herzegovinian</option>
+												<option value="honduran">Honduran</option>
+												<option value="hungarian">Hungarian</option>
+												<option value="icelander">Icelander</option>
+												<option value="indian">Indian</option>
+												<option value="0">Indonesian</option>
+												<option value="iranian">Iranian</option>
+												<option value="iraqi">Iraqi</option>
+												<option value="irish">Irish</option>
+												<option value="israeli">Israeli</option>
+												<option value="italian">Italian</option>
+												<option value="ivorian">Ivorian</option>
+												<option value="jamaican">Jamaican</option>
+												<option value="japanese">Japanese</option>
+												<option value="jordanian">Jordanian</option>
+												<option value="kazakhstani">Kazakhstani</option>
+												<option value="kenyan">Kenyan</option>
+												<option value="kittian & nevisian">Kittian & Nevisian
+												</option>
+												<option value="kuwaiti">Kuwaiti</option>
+												<option value="kyrgyz">Kyrgyz</option>
+												<option value="laotian">Laotian</option>
+												<option value="latvian">Latvian</option>
+												<option value="lebanese">Lebanese</option>
+												<option value="liberian">Liberian</option>
+												<option value="libyan">Libyan</option>
+												<option value="liechtensteiner">Liechtensteiner</option>
+												<option value="lithuanian">Lithuanian</option>
+												<option value="luxembourger">Luxembourger</option>
+												<option value="macedonian">Macedonian</option>
+												<option value="malagasy">Malagasy</option>
+												<option value="malawian">Malawian</option>
+												<option value="malaysia" selected>Malaysia</option>
+												<option value="maldivan">Maldivan</option>
+												<option value="malian">Malian</option>
+												<option value="maltese">Maltese</option>
+												<option value="marshallese">Marshallese</option>
+												<option value="mauritanian">Mauritanian</option>
+												<option value="mauritian">Mauritian</option>
+												<option value="mexican">Mexican</option>
+												<option value="micronesian">Micronesian</option>
+												<option value="moldovan">Moldovan</option>
+												<option value="monacan">Monacan</option>
+												<option value="mongolian">Mongolian</option>
+												<option value="moroccan">Moroccan</option>
+												<option value="mosotho">Mosotho</option>
+												<option value="motswana">Motswana</option>
+												<option value="mozambican">Mozambican</option>
+												<option value="namibian">Namibian</option>
+												<option value="nauruan">Nauruan</option>
+												<option value="nepalese">Nepalese</option>
+												<option value="new zealander">New Zealander</option>
+												<option value="ni-vanuatu">Ni-Vanuatu</option>
+												<option value="nicaraguan">Nicaraguan</option>
+												<option value="nigerien">Nigerien</option>
+												<option value="north korean">North Korean</option>
+												<option value="northern irish">Northern Irish</option>
+												<option value="norwegian">Norwegian</option>
+												<option value="omani">Omani</option>
+												<option value="pakistani">Pakistani</option>
+												<option value="palauan">Palauan</option>
+												<option value="panamanian">Panamanian</option>
+												<option value="papua new guinean">Papua New Guinean</option>
+												<option value="paraguayan">Paraguayan</option>
+												<option value="peruvian">Peruvian</option>
+												<option value="polish">Polish</option>
+												<option value="portuguese">Portuguese</option>
+												<option value="qatari">Qatari</option>
+												<option value="romanian">Romanian</option>
+												<option value="russian">Russian</option>
+												<option value="rwandan">Rwandan</option>
+												<option value="saint lucian">Saint Lucian</option>
+												<option value="salvadoran">Salvadoran</option>
+												<option value="samoan">Samoan</option>
+												<option value="san marinese">San Marinese</option>
+												<option value="sao tomean">Sao Tomean</option>
+												<option value="saudi">Saudi</option>
+												<option value="scottish">Scottish</option>
+												<option value="senegalese">Senegalese</option>
+												<option value="serbian">Serbian</option>
+												<option value="seychellois">Seychellois</option>
+												<option value="sierra leonean">Sierra Leonean</option>
+												<option value="singaporean">Singaporean</option>
+												<option value="slovakian">Slovakian</option>
+												<option value="slovenian">Slovenian</option>
+												<option value="solomon islander">Solomon Islander</option>
+												<option value="somali">Somali</option>
+												<option value="south african">South African</option>
+												<option value="south korean">South Korean</option>
+												<option value="spanish">Spanish</option>
+												<option value="sri lankan">Sri Lankan</option>
+												<option value="sudanese">Sudanese</option>
+												<option value="surinamer">Surinamer</option>
+												<option value="swazi">Swazi</option>
+												<option value="swedish">Swedish</option>
+												<option value="swiss">Swiss</option>
+												<option value="syrian">Syrian</option>
+												<option value="taiwanese">Taiwanese</option>
+												<option value="tajik">Tajik</option>
+												<option value="tanzanian">Tanzanian</option>
+												<option value="thai">Thai</option>
+												<option value="togolese">Togolese</option>
+												<option value="tongan">Tongan</option>
+												<option value="trinidadian or tobagonian">Trinidadian or
+													Tobagonian</option>
+												<option value="tunisian">Tunisian</option>
+												<option value="turkish">Turkish</option>
+												<option value="tuvaluan">Tuvaluan</option>
+												<option value="ugandan">Ugandan</option>
+												<option value="ukrainian">Ukrainian</option>
+												<option value="uruguayan">Uruguayan</option>
+												<option value="uzbekistani">Uzbekistani</option>
+												<option value="venezuelan">Venezuelan</option>
+												<option value="vietnamese">Vietnamese</option>
+												<option value="welsh">Welsh</option>
+												<option value="yemenite">Yemenite</option>
+												<option value="zambian">Zambian</option>
+												<option value="zimbabwean">Zimbabwean</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Email:</label>
+											<input type="text" class="form-control"
+												placeholder="Example. info@gamuda.com.my">
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Telephone:</label>
+											<input type="text" class="form-control" placeholder="Example. 03-7491 8288">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Organization / Company Core Competencies:</label>
+											<select class="form-control select-multiple-tags" multiple="multiple"
+												data-fouc>
+												<option value="Logistic Management " selected>Logistic
+													Management </option>
+												<option value="System Integration" selected>System Integration
+												</option>
+												<option value="Miniaturization" selected>Miniaturization
+												</option>
+												<option value="Wireless Communication">Wireless Communication
+												</option>
+												<option value="Engine">Engine
+												</option>
+												<option value="Microelectronic ">Microelectronic
+												</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Area of Company Specialist / Expertise:</label>
+											<select class="form-control select-multiple-tags" multiple="multiple"
+												data-fouc>
+												<option value="Sensor Networks" selected>Sensor Networks
+												</option>
+												<option value="Aerospace Structures" selected>Aerospace
+													Structures</option>
+												<option value="Machine Design">Machine Design</option>
+												<option value="Radio Frequency (Rf) And Microwaves">Radio
+													Frequency (Rf) And Microwaves</option>
+												<option value="Geographical Information System (GIS)">
+													Geographical Information System (GIS)</option>
+												<option value="Biomass Energy Technology ">Biomass Energy
+													Technology </option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="font-weight-semibold h6">Manpower Classification</div>
+									</div>
+
+
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>No. of Management Level:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="80">
+												<span class="input-group-append">
+													<span class="input-group-text">%</span>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>No. of Technical:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="15">
+												<span class="input-group-append">
+													<span class="input-group-text">%</span>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>No. of Support Staff:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="5">
+												<span class="input-group-append">
+													<span class="input-group-text">%</span>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>No. of Bumiputera Manpower:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="30">
+
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>No. of Non-Bumiputera Manpower:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="15">
+
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>No. of Foreign Manpower:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="25">
+
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+
+										<div class="d-flex justify-content-between align-items-center mb-2">
+											<span class="font-weight-semibold h6">ICP Involvement</span>
+											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
+												data-toggle="modal" data-target="#addICPInvolvement"><i
+													class="icon-plus3" data-popup="tooltip"
+													data-original-title="Add"></i></button>
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>ICP Involvement Type</th>
+														<th>Year of Involvement</th>
+														<th>Program Name</th>
+														<th>Program Code</th>
+														<th class="action-icon-width">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>ICP Recipient</ted>
+														<td>2021</ted>
+														<td>Program ABC</ted>
+														<td>P13231312</ted>
+														<td>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-compose" data-popup="tooltip" title=""
+																	data-original-title="Edit"></i></button>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-trash-alt" data-popup="tooltip" title=""
+																	data-original-title="Delete"></i></button>
+														</td>
+													</tr>
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+
+										<div class="d-flex justify-content-between align-items-center mb-2">
+											<span class="font-weight-semibold h6">Shareholding Information</span>
+											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
+												data-toggle="modal" data-target="#addShareholding"><i class="icon-plus3"
+													data-popup="tooltip" data-original-title="Add"></i></button>
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Type of Shareholder</th>
+														<th>Date of Registration / Incorporation</th>
+														<th>Organization Name</th>
+														<th>SSM / Reg No.</th>
+														<th>% of Shareholding</th>
+														<th class="action-icon-width">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Company</ted>
+														<td>01/01/2021</ted>
+														<td>Organization ABC</ted>
+														<td>1112231312</ted>
+														<td>30</ted>
+														<td>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-compose" data-popup="tooltip" title=""
+																	data-original-title="Edit"></i></button>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-trash-alt" data-popup="tooltip" title=""
+																	data-original-title="Delete"></i></button>
+														</td>
+													</tr>
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+
+
+									<div class="col-md-12">
+
+										<div class="d-flex justify-content-between align-items-center mb-2">
+											<span class="font-weight-semibold h6">Sector & Product / Services</span>
+											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
+												data-toggle="modal" data-target="#addSectorProductServices"><i
+													class="icon-plus3" data-popup="tooltip"
+													data-original-title="Add"></i></button>
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Sector</th>
+														<th>Sub-Sector</th>
+														<th>Product / Services</th>
+														<th class="action-icon-width">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Civil & Construction</td>
+														<td>
+															<span>
+																<span class="badge badge-light font-size-sm">Industrial
+																	Building System(IBS)
+																</span>
+																<span
+																	class="badge badge-light font-size-sm">Non-metallic
+																	Mineral
+																</span>
+															</span>
+														</td>
+														<td>Design</td>
+														<td>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-compose" data-popup="tooltip" title=""
+																	data-original-title="Edit"></i></button>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-trash-alt" data-popup="tooltip" title=""
+																	data-original-title="Delete"></i></button>
+														</td>
+													</tr>
+													<tr>
+														<td>Transportation</td>
+														<td>
+															<span>
+																<span class="badge badge-light font-size-sm">Rail
+																</span>
+																<span class="badge badge-light font-size-sm">Automotive
+																</span>
+															</span>
+														</td>
+														<td>Design</td>
+														<td>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-compose" data-popup="tooltip" title=""
+																	data-original-title="Edit"></i></button>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-trash-alt" data-popup="tooltip" title=""
+																	data-original-title="Delete"></i></button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="d-flex justify-content-between align-items-center mb-2">
+											<span class="font-weight-semibold h6">Collaborated Academia</span>
+											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
+												data-toggle="modal" data-target="#addCollaboratedAcademia"><i
+													class="icon-plus3" data-popup="tooltip"
+													data-original-title="Add"></i></button>
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>University Name</th>
+														<th>Faculty</th>
+														<th>Contact Name</th>
+														<th>Contact Email</th>
+														<th>Contact Number</th>
+														<th>Name of Program/Event</th>
+														<th class="action-icon-width">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>University Malaysia</td>
+														<td>Information Technology Department</td>
+														<td>Faizul Khalid</td>
+														<td>FaizulKhalid@UM.com.my</td>
+														<td>011-111 1111</td>
+														<td>Supply Chain Evolution 2021</td>
+														<td>
+
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-compose" data-popup="tooltip" title=""
+																	data-original-title="Edit"></i></button>
+
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-trash-alt" data-popup="tooltip" title=""
+																	data-original-title="Remove"></i></button>
+														</td>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="d-flex justify-content-between align-items-center mb-2">
+											<span class="font-weight-semibold h6">Company Experience</span>
+											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
+												data-toggle="modal" data-target="#addCompanyExperience"><i
+													class="icon-plus3" data-popup="tooltip"
+													data-original-title="Add"></i></button>
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Project Name</th>
+														<th>Brief Description</th>
+														<th>Project Duration</th>
+														<th class="action-icon-width">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Construction Building 1</td>
+														<td>Construct Building for SMART City Area 1</td>
+														<td>1-2 Years</td>
+														<td>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-compose" data-popup="tooltip" title=""
+																	data-original-title="Edit"></i></button>
+
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-trash-alt" data-popup="tooltip" title=""
+																	data-original-title="Remove"></i></button>
+														</td>
+														</td>
+													</tr>
+													<tr>
+														<td>Construction Building 2</td>
+														<td>Construct Building for SMART City Area 2</td>
+														<td>1-2 Years</td>
+														<td>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-compose" data-popup="tooltip" title=""
+																	data-original-title="Edit"></i></button>
+
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-trash-alt" data-popup="tooltip" title=""
+																	data-original-title="Remove"></i></button>
+														</td>
+														</td>
+													</tr>
+													<tr>
+														<td>Construction Building 3</td>
+														<td>Construct Building for SMART City Area 3</td>
+														<td>1-2 Years</td>
+														<td>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-compose" data-popup="tooltip" title=""
+																	data-original-title="Edit"></i></button>
+
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-trash-alt" data-popup="tooltip" title=""
+																	data-original-title="Remove"></i></button>
+														</td>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-footer  d-sm-flex justify-content-sm-between align-items-sm-center">
+								<ul
+									class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
+								</ul>
+
+								<ul
+									class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
+									<button type="button" class="btn btn-light m-1" onclick="location.href = '#'">Save
+										Draft<i class="icon-floppy-disk ml-1"></i></button>
+									<button type="button" class="btn btn-light m-1" onclick="location.href = '#'">Submit
+										Supply Chain<i class="icon-paperplane ml-1"></i></button>
+									<button type="button" class="btn btn-light m-1"
+										onclick="location.href = './tda-create-supply-chain-mf-machineries.html'">Save & Next<i
+											class="icon-arrow-right6 ml-1
+											"></i></button>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--/ card content placement -->
+				</div>
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light2">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+						data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2021. <a href="#">Suppy Chain</a> by <a href="#" target="_blank">Technology Depository
+							Agency (TDA)</a>
+					</span>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+
+<!-- Full width modal/ Add Shareholding -->
+<div id="addShareholding" class="modal fade" tabindex="-1">
+	<div class="modal-dialog  modal-full">
+		<div class="modal-content">
+
+
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h5 class="card-title font-weight-bold">Add Shareholding Information</h5>
+							</div>
+							<div class="card-body">
+								<form action="#">
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Type of Shareholder:</label>
+											<select data-placeholder="Select Product / Services"
+												class="form-control select-search" data-fouc>
+												<option value="Company">Company</option>
+												<option value="Trust">Trust</option>
+												<option value="Partnership Firm">Partnership Firm</option>
+												<option value="NGO">NGO</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group"><label>Date of Registration / Incorporation:</label>
+											<div class="input-group">
+												<span class="input-group-prepend">
+													<span class="input-group-text"><i
+															class="icon-calendar22"></i></span>
+												</span>
+												<input type="text" class="form-control daterange-single"
+													value="01/01/2021">
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Organization Name:</label>
+											<input type="text" class="form-control"
+												placeholder="Example. Organization ABC">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>SSM / Reg No.:</label>
+											<input type="text" class="form-control" placeholder="Example. 1112231312">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>% of Shareholding:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="30">
+												<span class="input-group-append">
+													<span class="input-group-text">%</span>
+												</span>
+											</div>
+										</div>
+									</div>
+
+								</form>
+								<div class="text-right">
+									<button type="submit" class="btn btn-light" class="remove"
+										data-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /full width modal -->
+
+<!-- Full width modal/ Add Sector & Product / Services -->
+<div id="addSectorProductServices" class="modal fade" tabindex="-1">
+	<div class="modal-dialog  modal-full">
+		<div class="modal-content">
+
+
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h5 class="card-title font-weight-bold">Add Sector & Product / Services</h5>
+							</div>
+							<div class="card-body">
+								<form action="#">
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Sector:</label>
+											<select data-placeholder="Select Sector" class="form-control select-search"
+												data-fouc>
+												<option></option>
+												<option value="">-- select one --</option>
+												<option value="Agriculture / Food Processing">Agriculture / Food
+													Processing
+												</option>
+												<option value="Machinery & Metal">Machinery & Metal</option>
+												<option value="Chemical Industries
+												">Chemical Industries
+												</option>
+												<option value="Civil / Construction/ Building Technology
+												">Civil / Construction/ Building Technology
+												</option>
+												<option value="Food and Drink
+												">Food and Drink
+												</option>
+												<option value="Forestry
+												">Forestry
+												</option>
+												<option value="Hotel/ Catering/ Tourism
+												">Hotel/ Catering / Tourism
+												</option>
+												<option value="Life Sciences & Medical Technology
+												">Life Sciences & Medical Technology
+												</option>
+												<option value="Electrical & Electronic
+												">Electrical & Electronic
+												</option>
+												<option value="Textiles & Apparels
+												">Textiles & Apparels
+												</option>
+												<option value="Transport
+												">Transport
+												</option>
+												<option value="Utilities
+												">Utilities
+												</option>
+												<option value="ICT Services / Smart Technology 
+												">ICT Services / Smart Technology
+												</option>
+												<option value="Green Technology
+												">Green Technology
+												</option>
+												<option value="Financial/Accounting Services
+												">Financial/Accounting Services
+												</option>
+
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Sub-sector:</label>
+											<select data-placeholder="Select Sub-Sector"
+												class="form-control multiselect-filtering" multiple="multiple"
+												data-fouc>
+												<option value="Livestock">Livestock</option>
+												<option value="Farming">Farming</option>
+												<option value="v">Fisheries</option>
+												<option value="Fruits & Vegetables">Fruits & Vegetables
+												</option>
+												<option value="Floriculture">Floriculture
+												</option>
+												<option value="Machinery & Equipment">Machinery & Equipment
+												</option>
+												<option value="Basic Metal Products">Basic Metal Products
+												</option>
+												<option value="Engineering Support Industry">Engineering Support
+													Industry
+												</option>
+												<option value="Fabricated Metal Products">Fabricated Metal
+													Products
+												</option>
+												<option value="Inorganic Chemicals">Inorganic Chemicals
+												</option>
+												<option value="Agricultural Chemicals">Agricultural Chemicals
+												</option>
+												<option value="Industrial Gases">Industrial Gases
+												</option>
+												<option value="Fertilisers">Fertilisers
+												</option>
+												<option value="Paint & Printing Ink">Paint & Printing Ink
+												</option>
+												<option value="Non-metallic Mineral">Non-metallic Mineral
+												</option>
+												<option value="Industrial Building System (IBS)">Industrial
+													Building System (IBS)
+												</option>
+												<option value="Food">Food
+												</option>
+												<option value="Drink ">Drink
+												</option>
+												<option value="Tabacco ">Tabacco
+												</option>
+												<option value="Wood">Wood
+												</option>
+												<option value="Furniture & Fixtures">Furniture & Fixtures
+												</option>
+												<option value="Pulp & Paper">Pulp & Paper
+												</option>
+												<option value="Catering">Catering
+												</option>
+												<option value="Hotel">Hotel
+												</option>
+												<option value="Medical Devices/Equipment/Services">Medical
+													Devices / Equipment / Services
+												</option>
+												<option value="Biotechnology">Biotechnology
+												</option>
+												<option value="Healthcare Provider">Healthcare Provider
+												</option>
+												<option value="Pharmaceutical">Pharmaceuticals
+												</option>
+												<option value="Electronic Components">Electronic Components
+												</option>
+												<option value="Consumer Electronics">Consumer Electronics
+												</option>
+												<option value="Electrical Products">Electrical Products
+												</option>
+												<option value="Industrial Electronics">Industrial Electronics
+												</option>
+												<option value="Clothing">Clothing
+												</option>
+												<option value="Footwear">Footwear
+												</option>
+												<option value="Leather">Leather
+												</option>
+												<option value="Textile">Textiles
+												</option>
+												<option value="Jeweller">Jewellery
+												</option>
+												<option value="Aerospace / Aviation">Aerospace / Aviation
+												</option>
+												<option value="Automotive">Automotive
+												</option>
+												<option value="Rail">Rail
+												</option>
+												<option value="Shipbuilding & Ship Repair">Shipbuilding &
+													Ship Repair
+												</option>
+												<option value="Water">Water
+												</option>
+												<option value="Electricity">Electricity
+												</option>
+												<option value="Gas">Gas
+												</option>
+												<option value="Digital Services">Digital Services
+												</option>
+												<option value="Semiconductor">Semiconductor
+												</option>
+												<option value="Big Data">Big Data
+												</option>
+												<option value="Software">Software
+												</option>
+												<option value="Technology Equipments">Technology Equipments
+												</option>
+												<option value="Education">Education
+												</option>
+												<option value="Biomass">Biomass
+												</option>
+												<option value="Nanoscience / nanotechnology ">Nanoscience /
+													nanotechnology
+												</option>
+												<option value="Solar">Solar
+												</option>
+												<option value="Banking">Banking
+												</option>
+												<option value="Insuranc">Insurance
+												</option>
+
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Product / Services:</label>
+											<select data-placeholder="Select Product / Services"
+												class="form-control multiselect-filtering" multiple="multiple"
+												data-fouc>
+												<option value="Design">Design
+												</option>
+												<option value="Services">Services</option>
+												<option value="Maintenance, Repair, Overhaul (MRO)
+											">Maintenance, Repair, Overhaul (MRO)
+												</option>
+												<option value="Assembly & Testing
+											">Assembly & Testing
+												</option>
+												<option value="Construction">Construction
+												</option>
+												<option value="Manufacturing">Manufacturing
+												</option>
+												<option value="Refurbishment / Rehabilitation">Refurbishment /
+													Rehabilitation
+												</option>
+												<option value="System Engineering / Integration">System
+													Engineering / Integration
+												</option>
+												<option value="Trading / Distribution">Trading / Distribution
+												</option>
+												<option value="R&D">R&D
+												</option>
+												<option value="Certification Body">Certification Body
+												</option>
+												<option value="Infrastructure & Equipment">Infrastructure &
+													Equipment
+												</option>
+												<option value="Manpower">Manpower
+												</option>
+												<option value="Education & Training">Education & Training
+												</option>
+
+											</select>
+										</div>
+									</div>
+
+
+
+
+
+
+
+								</form>
+								<div class="text-right">
+									<button type="submit" class="btn btn-light" class="remove"
+										data-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /full width modal -->
+
+<!-- Full width modal/ Collaborated Academia -->
+<div id="addCollaboratedAcademia" class="modal fade" tabindex="-1">
+	<div class="modal-dialog  modal-full">
+		<div class="modal-content">
+
+
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h5 class="card-title font-weight-bold">Add Collaborated Academia
+								</h5>
+							</div>
+							<div class="card-body">
+								<form action="#">
+
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label>University Name:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. Univesity Malaysia">
+												</div>
+											</div>
+
+
+											<div class="col-md-6">
+												<div class="form-group">
+													<label>Faculity:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. Information Technology">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Contact Name:</label>
+											<input type="text" class="form-control"
+												placeholder="Example. Redzan Ismail">
+										</div>
+									</div>
+
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Contact Email:</label>
+											<input type="text" class="form-control"
+												placeholder="Example. Redzan_Ismail@um.com">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Contact Number:</label>
+											<input type="text" class="form-control" placeholder="Example. 011-111 1111">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Name of Program/Event:</label>
+											<input type="text" class="form-control"
+												placeholder="Example. Supply Chain Evolution 2021">
+										</div>
+									</div>
+
+
+								</form>
+								<div class="text-right">
+									<button type="submit" class="btn btn-light" class="remove"
+										data-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /full width modal -->
+
+<!-- Full width modal/ Company Experience -->
+<div id="addCompanyExperience" class="modal fade" tabindex="-1">
+	<div class="modal-dialog  modal-full">
+		<div class="modal-content">
+
+
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h5 class="card-title font-weight-bold">Add Company Experience
+								</h5>
+							</div>
+							<div class="card-body">
+								<form action="#">
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Project Name:</label>
+											<input type="text" class="form-control" placeholder="Example. Project A">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Brief Description:</label>
+											<textarea type="text" class="form-control"
+												placeholder="Example. Project A Construction at Kuala Lumpur"
+												rows="4"></textarea>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Project Duration:</label>
+											<select data-placeholder="Select project duration"
+												class="form-control select" data-fouc>
+												<option></option>
+
+												<option value="#">Less than 1 Year</option>
+												<option value="#">1 Year</option>
+												<option value="#">1-2 Years</option>
+												<option value="#">2-3 Years</option>
+												<option value="#">3-4 Years</option>
+												<option value="#">More than 5 Yeasr</option>
+											</select>
+										</div>
+									</div>
+
+								</form>
+								<div class="text-right">
+									<button type="submit" class="btn btn-light" class="remove"
+										data-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /full width modal -->
+
+<!-- Full width modal/ ICP Involvement -->
+<div id="addICPInvolvement" class="modal fade" tabindex="-1">
+	<div class="modal-dialog  modal-full">
+		<div class="modal-content">
+
+
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h5 class="card-title font-weight-bold">Add ICP Involvement
+								</h5>
+							</div>
+							<div class="card-body">
+								<form action="#">
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>ICP Involvement Type:</label>
+											<select data-placeholder="Select Product / Services"
+												class="form-control select" data-fouc>
+												<option value="ICP Provider">ICP Provider</option>
+												<option value="ICP REcipient">ICP Recipient</option>
+												<option value="Potential ICP REcipient">Potential ICP Recipient</option>
+												<option value="None">None</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Year of Involvment:</label>
+											<input type="text" class="form-control" placeholder="2013">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Program Name:</label>
+											<input type="text" class="form-control" placeholder="Program ABC">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Program Code:</label>
+											<input type="text" class="form-control" placeholder="P123817">
+										</div>
+									</div>
+
+
+
+
+
+								</form>
+								<div class="text-right">
+									<button type="submit" class="btn btn-light" class="remove"
+										data-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /full width modal -->
+
+
+</html>

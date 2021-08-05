@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>TDA | Construction Maintenance LRT 5(FQ01012021) | Materials Information | Sub-System</title>
+	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
+
+	<!-- Global stylesheets -->
+	<link href="https//fonts.googleapis.com/css?family=Roboto400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="./global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/form_hide.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="./global_assets/js/main/jquery.min.js"></script>
+	<script src="./global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="./global_assets/js/plugins/loaders/blockui.min.js"></script>
+
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="./global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="./global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script src="./global_assets/js/plugins/forms/wizards/steps.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+	<script src="./global_assets/js/plugins/forms/validation/validate.min.js"></script>
+	<script src="./global_assets/js/plugins/extensions/cookie.js"></script>
+
+	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
+	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+
+	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+	<script src="./global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+	<script src="./global_assets/js/demo_pages/extra_sweetalert.js"></script>
+
+	<script src="./global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+
+	<script src="./global_assets/js/plugins/notifications/pnotify.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="./global_assets/js/demo_pages/form_multiselect.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+
+		<!-- Header with logos -->
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="#" class="d-inline-block">
+					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
+						alt="">
+				</a>
+			</div>
+
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="#" class="d-inline-block">
+					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
+						style="width:40px; height: 25px; ">
+				</a>
+			</div>
+		</div>
+		<!-- /header with logos -->
+
+		<!-- Mobile controls -->
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="#" class="d-inline-block">
+					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
+						alt="">
+				</a>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+		</div>
+		<!-- /mobile controls -->
+
+
+		<!-- Navbar content -->
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+						<i class="icon-bell3"></i>
+						<span class="d-md-none ml-2">Notifications</span>
+						<span class="badge badge-pill bg-warning-400 ml-auto mt-1 mr-1">9</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-content wmin-md-300">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Notifications</span>
+
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3">
+										<img src="./global_assets/images/placeholders/placeholder2.jpg" width="36"
+											height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Aidan Chong</a>
+										<span class="d-block text-muted font-size-sm">has 'Notified' on this programme
+											SM21</span>
+									</div>
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="text-grey mr-auto">All Notifications</a>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+
+
+					<div class="dropdown-menu dropdown-content wmin-md-300">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Notifications</span>
+
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3">
+										<img src="./global_assets/images/placeholders/placeholder2.jpg" width="36"
+											height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Aidan Chong</a>
+										<span class="d-block text-muted font-size-sm">has closed
+											Contract TDA/POD-CEMRT_20/2021/803/909</span>
+									</div>
+
+								</li>
+
+
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="text-grey mr-auto">All Notification</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<span class="badge bg-success-400 badge-pill ml-md-3 mr-md-auto">Online</span>
+
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown dropdown-user">
+					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+						data-toggle="dropdown">
+						<img src="./global_assets/images/placeholders/placeholder2.jpg" class="rounded-circle mr-2"
+							height="34" alt="">
+						<span>Aidan Chong</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="./sc-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
+							Account
+							Settings</a>
+
+						<a href="./sc-index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- /navbar content -->
+
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header">
+							<div class="text-uppercase font-size-xs line-height-xs">tda</div> <i class="icon-menu"
+								title="Main"></i>
+						</li>
+
+						<!-- Company -->
+						<li class="nav-item">
+							<a href="./tda-company-grid.html" class="nav-link active">
+								<i class="icon-magazine"></i>
+								<span>
+									View Company
+								</span>
+							</a>
+						</li>
+						<!-- /Company -->
+
+						<!-- Contracted Supply Chain -->
+						<li class="nav-item">
+							<a href="./tda-project-list-add.html" class="nav-link ">
+								<i class="icon-pencil7"></i>
+								<span>
+									Create Contract <br> Supply Chain
+								</span>
+							</a>
+						</li>
+						<!-- /Contracted Supply Chain -->
+
+						<!-- Non-Contracted Supply Chain -->
+						<li class="nav-item">
+							<a href="./tda-create-supply-chain-company-info.html" class="nav-link ">
+								<i class="icon-pencil7"></i>
+								<span>
+									Create Non-Contracted <br> Supply Chain
+								</span>
+							</a>
+						</li>
+						<!-- /Non-Contracted Supply Chain -->
+
+
+
+
+						<!-- /Main -->
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex" >
+						<div class="breadcrumb">
+							<a href="#" class="breadcrumb-item"> Company
+								List</a>
+							<a href="#" class="breadcrumb-item"> Gamuda Berhad</a>
+							<a href="#" class="breadcrumb-item"> Construction Maintenance LRT 5 - FQ01012021</a>
+							<a href="#" class="breadcrumb-item"> Material Information - Sub-System </a>
+
+						</div>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+
+
+			<!-- Content area -->
+			<div class="content2 pt-0">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- 2 columns form -->
+						<!-- Basic bars -->
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h5 class="card-title font-weight-bold"> Construction Maintenance LRT
+									5 - FQ01012021
+								</h5>
+							</div>
+							<ul class="nav nav-tabs nav-tabs-bottom bg-light">
+								<li class="nav-item"><a href="./tda-supply-chain-update-project.html"
+										class="nav-link "> <i class="icon-file-text2 mr-2"></i>Contract
+										Details</a>
+								</li>
+								<li class="nav-item"><a href="./tda-supply-chain-update-contractors.html"
+										class="nav-link"> <i class="icon-file-text2 mr-2"></i>Contractor Details</a>
+								</li>
+								<li class="nav-item"><a href="./tda-supply-chain-update-mf-machineries.html" class="nav-link ">
+										<i class="icon-file-text2 mr-2"></i>Machineries & Facilities Information</a>
+								</li>
+								<li class="nav-item"><a href="./tda-supply-chain-update-material-system.html"
+										class="nav-link active">
+										<i class="icon-file-text2 mr-2"></i>Material Information</a>
+							</ul>
+
+							<div class="card-body">
+								<div class="d-flex justify-content-between">
+									<h6 class="font-weight-semibold">Material Type:</h6>
+
+								</div>
+
+								<div class="btn-group justify-content-center mr-3 mb-3">
+									<a href="#" class="btn bg-dark dropdown-toggle" data-toggle="dropdown">Sub-System</a>
+									<div class="dropdown-menu">
+										<a href="./tda-supply-chain-update-material-system.html" class="dropdown-item ">System</a>
+										<a href="./tda-supply-chain-update-material-sub-system.html" class="dropdown-item active">Sub-System</a>
+										<a href="./tda-supply-chain-update-material-component.html" class="dropdown-item ">Component</a>
+										<a href="./tda-supply-chain-update-material-sub-component.html" class="dropdown-item ">Sub-Component</a>
+										<a href="./tda-supply-chain-update-material-parts.html" class="dropdown-item ">Parts</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="d-flex justify-content-between align-items-center">
+											<span class="font-weight-semibold h6">Sub-System</span>
+											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
+												data-toggle="modal" data-target="#addSubSystem"><i class="icon-plus3"
+													data-popup="tooltip" data-original-title="Add"></i></button>
+										</div>
+										<div class="table-responsive">
+											<table class="table datatable-basic ">
+												<thead>
+													<tr>
+														<th>Code</th>
+														<th>Name</th>
+														<th>Brand</th>
+														<th>Model</th>
+														<th>Quantity</th>
+														<th>Country Origin</th>
+														<th>Company Name</th>
+														<th>Description</th>
+														<th class="action-icon-width">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>HMT132</td>
+														<td>Sub-System 1</td>
+														<td>Mitsubishi</td>
+														<td>TM3000x</td>
+														<td>10</td>
+														<td>Malaysia</td>
+														<td>Mitsubishi</td>
+														<td>Sub-System for general contruction use</td>
+														<td>
+															<div class="breadcrumb m-2">
+																<a href="#"
+																	class="breadcrumb-elements-item dropdown-toggle"
+																	data-toggle="dropdown" aria-expanded="false">
+																	<i class="icon-menu7"></i>
+																</a>
+																<div class="dropdown-menu dropdown-menu-left">
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-file-eye"></i> View</a>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-compose"></i> Edit</a>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-trash-alt"></i>
+																		Delete</a>
+																	<div class="dropdown-divider"></div>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-link"></i>
+																		Link / View Component</a>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-link"></i>
+																		Link / View Sub-Component</a>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-link"></i>
+																		Link / View Parts</a>
+																</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>HMT133-x</td>
+														<td>Sub-System 2</td>
+														<td>Mitsubishi</td>
+														<td>TM3300x</td>
+														<td>13</td>
+														<td>Malaysia</td>
+														<td>Mitsubishi</td>
+														<td>Sub-System for general contruction use</td>
+														<td>
+															<div class="breadcrumb m-2">
+																<a href="#"
+																	class="breadcrumb-elements-item dropdown-toggle"
+																	data-toggle="dropdown" aria-expanded="false">
+																	<i class="icon-menu7"></i>
+																</a>
+																<div class="dropdown-menu dropdown-menu-left">
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-file-eye"></i> View</a>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-compose"></i> Edit</a>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-trash-alt"></i>
+																		Delete</a>
+																	<div class="dropdown-divider"></div>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-link"></i>
+																		Link / View Component</a>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-link"></i>
+																		Link / View Sub-Component</a>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-link"></i>
+																		Link / View Parts</a>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+
+
+
+									
+								</div>
+							</div>
+						</div>
+						<!-- /basic bars -->
+					</div>
+				</div>
+			</div>
+			<!-- /content area -->
+
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light2">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+						data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2021. <a href="#">Suppy Chain</a> by <a href="#" target="_blank">Technology Depository
+							Agency (TDA)</a>
+					</span>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+
+<!-- Full width modal/ Add Sub-System -->
+<div id="addSubSystem" class="modal fade" tabindex="-1">
+	<div class="modal-dialog  modal-full">
+		<div class="modal-content">
+
+
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h5 class="card-title font-weight-bold">Add Sub-System
+								</h5>
+							</div>
+							<div class="card-body">
+								<form action="#">
+
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Sub-System Code:</label>
+												<input type="text" class="form-control" placeholder="Example. HMT132">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Sub-System Name:</label>
+												<input type="text" class="form-control"
+													placeholder="Example. Sub-System 1">
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group">
+														<label>Sub-System Brand:</label>
+														<input type="text" class="form-control"
+															placeholder="Example. Mitsubishi">
+													</div>
+												</div>
+
+												<div class="col-md-4">
+													<div class="form-group">
+														<label>Sub-System Model:</label>
+														<input type="text" class="form-control"
+															placeholder="Example. TM3000x">
+													</div>
+												</div>
+
+												<div class="col-md-4">
+													<div class="form-group">
+														<label>Quantity:</label>
+														<input type="text" class="form-control"
+															placeholder="Example. 10">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group">
+														<label>Material Origin:</label>
+														<select 
+															data-placeholder="Select material origin"
+															class="form-control select" data-fouc>
+															<option></option>
+															<option value="Local">Local</option>
+															<option value="Foreign">Foreign</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<label>Country Origin:</label>
+														<select  data-placeholder="Select country origin"
+															class="form-control select-search" data-fouc>
+															<option></option>
+															<option value="kuwaiti">Kuwaiti</option>
+															<option value="kyrgyz">Kyrgyz</option>
+															<option value="laotian">Laotian</option>
+															<option value="latvian">Latvian</option>
+															<option value="lebanese">Lebanese</option>
+															<option value="liberian">Liberian</option>
+															<option value="libyan">Libyan</option>
+															<option value="liechtensteiner">Liechtensteiner
+															</option>
+															<option value="lithuanian">Lithuanian</option>
+															<option value="luxembourger">Luxembourger
+															</option>
+															<option value="macedonian">Macedonian</option>
+															<option value="malagasy">Malagasy</option>
+															<option value="malawian">Malawian</option>
+															<option value="malaysia" selected>Malaysia
+															</option>
+															<option value="maldivan">Maldivan</option>
+															<option value="malian">Malian</option>
+															<option value="maltese">Maltese</option>
+															<option value="marshallese">Marshallese</option>
+															<option value="mauritanian">Mauritanian</option>
+															<option value="mauritian">Mauritian</option>
+															<option value="mexican">Mexican</option>
+															<option value="micronesian">Micronesian</option>
+															<option value="moldovan">Moldovan</option>
+															<option value="monacan">Monacan</option>
+															<option value="mongolian">Mongolian</option>
+															<option value="moroccan">Moroccan</option>
+															<option value="mosotho">Mosotho</option>
+															<option value="motswana">Motswana</option>
+															<option value="mozambican">Mozambican</option>
+															<option value="namibian">Namibian</option>
+															<option value="nauruan">Nauruan</option>
+															<option value="nepalese">Nepalese</option>
+															<option value="new zealander">New Zealander
+															</option>
+															<option value="ni-vanuatu">Ni-Vanuatu</option>
+															<option value="nicaraguan">Nicaraguan</option>
+															<option value="nigerien">Nigerien</option>
+															<option value="north korean">North Korean
+															</option>
+															<option value="northern irish">Northern Irish
+															</option>
+															<option value="norwegian">Norwegian</option>
+															<option value="omani">Omani</option>
+															<option value="pakistani">Pakistani</option>
+															<option value="palauan">Palauan</option>
+															<option value="panamanian">Panamanian</option>
+															<option value="papua new guinean">Papua New
+																Guinean
+															</option>
+															<option value="paraguayan">Paraguayan</option>
+															<option value="peruvian">Peruvian</option>
+															<option value="polish">Polish</option>
+															<option value="portuguese">Portuguese</option>
+															<option value="qatari">Qatari</option>
+															<option value="romanian">Romanian</option>
+															<option value="russian">Russian</option>
+															<option value="rwandan">Rwandan</option>
+															<option value="saint lucian">Saint Lucian
+															</option>
+															<option value="salvadoran">Salvadoran</option>
+															<option value="samoan">Samoan</option>
+															<option value="san marinese">San Marinese
+															</option>
+														</select>
+													</div>
+												</div>
+
+
+												<div class="col-md-4">
+													<div class="form-group"><label>Certificate of
+															Origin:</label>
+														<div class="custom-file">
+															<input type="file" class="custom-file-input"
+																id="customFile">
+															<label class="custom-file-label" for="customFile">Choose
+																file</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<label>Company Name:</label>
+												<input type="text" class="form-control"
+													placeholder="Example. Mitsubishi Motors">
+											</div>
+										</div>
+
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<label>Description:</label>
+												<textarea type="text" class="form-control"
+													placeholder="Example. Sub-System for general contruction use"
+													rows="4"></textarea>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<div class="d-flex justify-content-between">
+													<h6 class="font-weight-bold">Standard Certification:
+													</h6>
+													<button type="button"
+														class="btn bg-light btn-icon rounded-round mb-1"
+														data-toggle="modal" data-target="#" data-popup="tooltip"
+														data-original-title="Add"><i class="icon-plus3"></i></button>
+												</div>
+												<div>
+													<table class="table">
+														<thead>
+															<tr>
+																<th>Standard Certification Name</th>
+																<th>Standard Certification File</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<div class="form-group">
+																		<input type="text" class="form-control"
+																			placeholder="Example. Standard Certification 3">
+																	</div>
+																</td>
+																<td>
+																	<div class="form-group">
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input"
+																				id="customFile">
+																			<label class="custom-file-label"
+																				for="customFile">Choose
+																				file</label>
+																		</div>
+																		<span class="form-text text-muted">Accepted
+																			formats: pdf.
+																			Max
+																			file
+																			size
+																			10Mb</span>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="form-group">
+																		<input type="text" class="form-control"
+																			placeholder="Example. Standard Certification 4">
+																	</div>
+																</td>
+																<td>
+																	<div class="form-group">
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input"
+																				id="customFile">
+																			<label class="custom-file-label"
+																				for="customFile">Choose
+																				file</label>
+																		</div>
+																		<span class="form-text text-muted">Accepted
+																			formats: pdf.
+																			Max
+																			file
+																			size
+																			10Mb</span>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<div class="d-flex justify-content-between">
+													<h6 class="font-weight-bold">Design Document:</h6>
+													<button type="button"
+														class="btn bg-light btn-icon rounded-round mb-1"
+														data-toggle="modal" data-target="#"><i class="icon-plus3"
+															data-popup="tooltip" data-original-title="Add"></i></button>
+												</div>
+												<div>
+													<table class="table">
+														<thead>
+															<tr>
+																<th>Design Document Name</th>
+																<th>Design Document File</th>
+
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<div class="form-group">
+																		<input type="text" class="form-control"
+																			placeholder="Example. DSS1100">
+																	</div>
+																</td>
+																<td>
+																	<div class="form-group">
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input"
+																				id="customFile">
+																			<label class="custom-file-label"
+																				for="customFile">Choose
+																				file</label>
+																		</div>
+																		<span class="form-text text-muted">Accepted
+																			formats: pdf. Max file size
+																			50Mb</span>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="form-group">
+																		<input type="text" class="form-control"
+																			placeholder="Example. DSS2200">
+																	</div>
+																</td>
+																<td>
+																	<div class="form-group">
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input"
+																				id="customFile">
+																			<label class="custom-file-label"
+																				for="customFile">Choose
+																				file</label>
+																		</div>
+																		<span class="form-text text-muted">Accepted
+																			formats: pdf. Max file size
+																			50Mb</span>
+																	</div>
+																</td>
+															</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<div class="d-flex justify-content-between">
+													<h6 class="font-weight-bold">Manual:</h6>
+													<button type="button"
+														class="btn bg-light btn-icon rounded-round mb-1"
+														data-toggle="modal" data-target="#"><i class="icon-plus3"
+															data-popup="tooltip" data-original-title="Add"></i></button>
+												</div>
+												<div>
+													<table class="table">
+														<thead>
+															<tr>
+																<th>Manual Name</th>
+																<th>Manual File</th>
+
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<div class="form-group">
+																		<input type="text" class="form-control"
+																			placeholder="Example. DSSM1100">
+																	</div>
+																</td>
+																<td>
+																	<div class="form-group">
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input"
+																				id="customFile">
+																			<label class="custom-file-label"
+																				for="customFile">Choose
+																				file</label>
+																		</div>
+																		<span class="form-text text-muted">Accepted
+																			formats: pdf. Max file size
+																			10Mb</span>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="form-group">
+																		<input type="text" class="form-control"
+																			placeholder="Example. DSSM2200">
+																	</div>
+																</td>
+																<td>
+																	<div class="form-group">
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input"
+																				id="customFile">
+																			<label class="custom-file-label"
+																				for="customFile">Choose
+																				file</label>
+																		</div>
+																		<span class="form-text text-muted">Accepted
+																			formats: pdf. Max file size
+																			10Mb</span>
+																	</div>
+																</td>
+															</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+
+											<div class="d-flex justify-content-between">
+												<h6 class="font-weight-bold">Sub-System Picture:</h6>
+												<button type="button" class="btn bg-light btn-icon rounded-round mb-1"
+													data-toggle="modal" data-target="#"><i class="icon-plus3"
+														data-popup="tooltip" data-original-title="Add"></i></button>
+											</div>
+											<div>
+												<table class="table">
+													<thead>
+														<tr>
+															<th>Sub-System Picture Description</th>
+															<th>Sub-System Picture File</th>
+
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																<div class="form-group">
+																	<input type="text" class="form-control"
+																		placeholder="Example. Front View">
+																</div>
+															</td>
+															<td>
+																<div class="form-group">
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input"
+																			id="customFile">
+																		<label class="custom-file-label"
+																			for="customFile">Choose
+																			file</label>
+																	</div>
+																	<span class="form-text text-muted">Accepted
+																		formats: Jpg. Png. Max file size
+																		10Mb</span>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="form-group">
+																	<input type="text" class="form-control"
+																		placeholder="Example. Back View">
+																</div>
+															</td>
+															<td>
+																<div class="form-group">
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input"
+																			id="customFile">
+																		<label class="custom-file-label"
+																			for="customFile">Choose
+																			file</label>
+																	</div>
+																	<span class="form-text text-muted">Accepted
+																		formats: Jpg. Png. Max file size
+																		10Mb</span>
+																</div>
+															</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+
+								</form>
+								<div class="text-right">
+									<button type="submit" class="btn btn-light" class="remove"
+										data-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /full width modal -->
+
+
+
+</html>
