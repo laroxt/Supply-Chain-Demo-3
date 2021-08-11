@@ -431,14 +431,16 @@
 											<table class="table datatable-basic ">
 												<thead>
 													<tr>
-														<th>Code</th>
-														<th>Name</th>
+														<th>Sub-System Code</th>
+														<th>Sub-System  Name</th>
 														<th>Brand</th>
 														<th>Model</th>
 														<th>Quantity</th>
 														<th>Country Origin</th>
 														<th>Company Name</th>
-														<th>Description</th>
+														<!-- <th>Description</th> -->
+														<th>System Code</th>
+														<th>System Name</th>
 														<th class="action-icon-width">Action</th>
 													</tr>
 												</thead>
@@ -451,7 +453,9 @@
 														<td>10</td>
 														<td>Malaysia</td>
 														<td>Mitsubishi</td>
-														<td>Sub-System for general contruction use</td>
+														<!-- <td>Sub-System for general contruction use</td> -->
+														<td>SP123-21</td>
+														<td>System 1</td>
 														<td>
 															<div class="breadcrumb m-2">
 																<a href="#"
@@ -467,16 +471,7 @@
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-trash-alt"></i>
 																		Delete</a>
-																	<div class="dropdown-divider"></div>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Component</a>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Sub-Component</a>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Parts</a>
+																	
 																</div>
 															</div>
 														</td>
@@ -489,7 +484,9 @@
 														<td>13</td>
 														<td>Malaysia</td>
 														<td>Mitsubishi</td>
-														<td>Sub-System for general contruction use</td>
+														<!-- <td>Sub-System for general contruction use</td> -->
+														<td>SP123-21</td>
+														<td>System 1</td>
 														<td>
 															<div class="breadcrumb m-2">
 																<a href="#"
@@ -505,16 +502,7 @@
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-trash-alt"></i>
 																		Delete</a>
-																	<div class="dropdown-divider"></div>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Component</a>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Sub-Component</a>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Parts</a>
+																	
 																</div>
 															</div>
 														</td>
@@ -589,6 +577,41 @@
 
 
 									<div class="row">
+										<div class="col-md-12">
+											<div class="d-flex justify-content-between mb-2">
+												<label class="font-weight-semibold h6">Sub-System Parent  Information
+												</label>
+											</div>
+											
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>System Code</label>
+												<select data-placeholder="Select System Code"
+													class="form-control select" data-fouc>
+													<option></option>
+													<option value="SP123-21">SP123-21</option>
+													<option value="SP123-22">SP123-22</option>
+													<option value="Na">Na</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>System Name:</label>
+												<input type="text" class="form-control" placeholder="System 1" disabled>
+											</div>
+										</div>
+										<div class="col-md-12"><p class="font-weight-semibold"><span class="text-danger">Note: </span> Please select system tiering for Sub-System if there's any.</p></div>
+										
+										<div class="col-md-12">
+											<div class="d-flex justify-content-between mb-2">
+												<label class="font-weight-semibold h6">Sub-System Information
+												</label>
+											</div>
+										</div>
+
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Sub-System Code:</label>
@@ -636,8 +659,7 @@
 												<div class="col-md-4">
 													<div class="form-group">
 														<label>Material Origin:</label>
-														<select 
-															data-placeholder="Select material origin"
+														<select data-placeholder="Select material origin"
 															class="form-control select" data-fouc>
 															<option></option>
 															<option value="Local">Local</option>
@@ -648,7 +670,7 @@
 												<div class="col-md-4">
 													<div class="form-group">
 														<label>Country Origin:</label>
-														<select  data-placeholder="Select country origin"
+														<select data-placeholder="Select country origin"
 															class="form-control select-search" data-fouc>
 															<option></option>
 															<option value="kuwaiti">Kuwaiti</option>

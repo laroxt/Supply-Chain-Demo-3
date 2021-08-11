@@ -352,14 +352,16 @@
 											<table class="table datatable-basic ">
 												<thead>
 													<tr>
-														<th>Code</th>
-														<th>Name</th>
+														<th>Sub-Component Code</th>
+														<th>Sub-Component Name</th>
 														<th>Brand</th>
 														<th>Model</th>
 														<th>Quantity</th>
 														<th>Country Origin</th>
 														<th>Company Name</th>
-														<th>Description</th>
+														<!-- <th>Description</th> -->
+														<th>Component Code</th>
+														<th>Component Name</th>
 														<th class="action-icon-width">Action</th>
 													</tr>
 												</thead>
@@ -372,7 +374,9 @@
 														<td>100</td>
 														<td>Malaysia</td>
 														<td>Grimonprez Transmission Gears</td>
-														<td>Sub-Component for Machine Y</td>
+														<!-- <td>Sub-Component for Machine Y</td> -->
+														<td>T10202123</td>
+														<td>Component 1</td>
 														<td>
 															<div class="breadcrumb m-2">
 																<a href="#"
@@ -388,10 +392,7 @@
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-trash-alt"></i>
 																		Delete</a>
-																	<div class="dropdown-divider"></div>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Parts</a>
+																	
 																</div>
 															</div>
 														</td>
@@ -404,7 +405,9 @@
 														<td>130</td>
 														<td>Malaysia</td>
 														<td>Grimonprez Transmission Gears</td>
-														<td>Sub-Component for Machine X</td>
+														<!-- <td>Sub-Component for Machine X</td> -->
+														<td>T10202123</td>
+														<td>Component 1</td>
 														<td>
 															<div class="breadcrumb m-2">
 																<a href="#"
@@ -420,10 +423,7 @@
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-trash-alt"></i>
 																		Delete</a>
-																	<div class="dropdown-divider"></div>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Parts</a>
+																	
 																</div>
 															</div>
 														</td>
@@ -496,6 +496,7 @@
 
 			<div class="modal-body">
 				<div class="row">
+					
 					<div class="col-md-8 offset-md-2">
 						<div class="card">
 							<div class="card-header bg-white header-elements-inline">
@@ -507,6 +508,42 @@
 
 
 									<div class="row">
+
+										<div class="col-md-12">
+											<div class="d-flex justify-content-between mb-2">
+												<label class="font-weight-semibold h6">Sub-Component Parent Information
+												</label>
+											</div>
+											
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Component Code</label>
+												<select data-placeholder="Select Component Code"
+													class="form-control select" data-fouc>
+													<option></option>
+													<option value="T10202123">T10202123</option>
+													<option value="T1020233x">T1020233x</option>
+													<option value="Na">Na</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Component Name:</label>
+												<input type="text" class="form-control" placeholder="Component 1" disabled>
+											</div>
+										</div>
+										<div class="col-md-12"><p class="font-weight-semibold"><span class="text-danger">Note: </span> Please select Component tiering for Sub-Component if there's any.</p></div>
+										
+										<div class="col-md-12">
+											<div class="d-flex justify-content-between mb-2">
+												<label class="font-weight-semibold h6">Sub-Component Information
+												</label>
+											</div>
+										</div>
+
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Sub-Component Code:</label>

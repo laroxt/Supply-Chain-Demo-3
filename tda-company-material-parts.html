@@ -431,14 +431,16 @@
 											<table class="table datatable-basic ">
 												<thead>
 													<tr>
-														<th>Code</th>
-														<th>Name</th>
+														<th>Part Code</th>
+														<th>Part Name</th>
 														<th>Brand</th>
 														<th>Model</th>
 														<th>Quantity</th>
 														<th>Country Origin</th>
 														<th>Company Name</th>
-														<th>Description</th>
+														<!-- <th>Description</th> -->
+														<th>Sub-Component Code</th>
+														<th>Sub-Component Name</th>
 														<th class="action-icon-width">Action</th>
 													</tr>
 												</thead>
@@ -451,7 +453,9 @@
 														<td>100</td>
 														<td>Malaysia</td>
 														<td>Grimonprez Transmission Gears</td>
-														<td>Parts for Machine Y</td>
+														<!-- <td>Parts for Machine Y</td> -->
+														<td>Gx3000</td>
+														<td>Sub-Component 1</td>
 														<td>
 															<div class="breadcrumb m-2">
 																<a href="#"
@@ -479,7 +483,9 @@
 														<td>130</td>
 														<td>Malaysia</td>
 														<td>Grimonprez Transmission Gears</td>
-														<td>Parts for Machine X</td>
+														<!-- <td>Parts for Machine X</td> -->
+														<td>Gx3000</td>
+														<td>Sub-Component 1</td>
 														<td>
 															<div class="breadcrumb m-2">
 																<a href="#"
@@ -567,6 +573,40 @@
 							<div class="card-body">
 								<form action="#">
 									<div class="row">
+										<div class="col-md-12">
+											<div class="d-flex justify-content-between mb-2">
+												<label class="font-weight-semibold h6">Parts Parent Information
+												</label>
+											</div>
+											
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Sub-Component Code</label>
+												<select data-placeholder="Select Sub-Component Code"
+													class="form-control select" data-fouc>
+													<option></option>
+													<option value="Gx3000">Gx3000</option>
+													<option value="Gx3200">Gx3200</option>
+													<option value="Na">Na</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Sub-Component Name:</label>
+												<input type="text" class="form-control" placeholder="Sub-Component 1" disabled>
+											</div>
+										</div>
+										<div class="col-md-12"><p class="font-weight-semibold"><span class="text-danger">Note: </span> Please select Component tiering for Sub-Component if there's any.</p></div>
+
+										<div class="col-md-12">
+											<div class="d-flex justify-content-between mb-2">
+												<label class="font-weight-semibold h6">Parts Information
+												</label>
+											</div>
+										</div>
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Parts Code:</label>
@@ -613,8 +653,7 @@
 												<div class="col-md-4">
 													<div class="form-group">
 														<label>Material Origin:</label>
-														<select 
-															data-placeholder="Select material origin"
+														<select data-placeholder="Select material origin"
 															class="form-control select" data-fouc>
 															<option></option>
 															<option value="Local">Local</option>
@@ -625,7 +664,7 @@
 												<div class="col-md-4">
 													<div class="form-group">
 														<label>Country Origin:</label>
-														<select  data-placeholder="Select country origin"
+														<select data-placeholder="Select country origin"
 															class="form-control select-search" data-fouc>
 															<option></option>
 															<option value="kuwaiti">Kuwaiti</option>

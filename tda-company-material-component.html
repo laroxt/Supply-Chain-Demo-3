@@ -431,14 +431,16 @@
 											<table class=" table datatable-basic ">
 												<thead>
 													<tr>
-														<th>Code</th>
-														<th>Name</th>
+														<th>Component Code</th>
+														<th>Component Name</th>
 														<th>Brand</th>
 														<th>Model</th>
 														<th>Quantity</th>
 														<th>Country Origin</th>
 														<th>Company Name</th>
-														<th>Description</th>
+														<!-- <th>Description</th> -->
+														<th>Sub-System Code</th>
+														<th>Sub-System Name</th>
 														<th class="action-icon-width">Action</th>
 													</tr>
 												</thead>
@@ -451,7 +453,9 @@
 														<td>30,000</td>
 														<td>Malaysia</td>
 														<td>KENENG</td>
-														<td>Component for general purpose</td>
+														<!-- <td>Component for general purpose</td> -->
+														<td>HMT132</td>
+														<td>Sub-System 1</td>
 														<td>
 															<div class="breadcrumb m-2">
 																<a href="#"
@@ -467,13 +471,7 @@
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-trash-alt"></i>
 																		Delete</a>
-																	<div class="dropdown-divider"></div>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Sub-Component</a>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Parts</a>
+																	
 																</div>
 															</div>
 														</td>
@@ -487,7 +485,9 @@
 														<td>31,000</td>
 														<td>Malaysia</td>
 														<td>KENENG</td>
-														<td>Component for general purpose</td>
+														<!-- <td>Component for general purpose</td> -->
+														<td>HMT132</td>
+														<td>Sub-System 1</td>
 														<td>
 															<div class="breadcrumb m-2">
 																<a href="#"
@@ -503,13 +503,7 @@
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-trash-alt"></i>
 																		Delete</a>
-																	<div class="dropdown-divider"></div>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Sub-Component</a>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-link"></i>
-																		Link / View Parts</a>
+																	
 																</div>
 															</div>
 														</td>
@@ -586,6 +580,40 @@
 							<div class="card-body">
 								<form action="#">
 									<div class="row">
+										<div class="col-md-12">
+											<div class="d-flex justify-content-between mb-2">
+												<label class="font-weight-semibold h6">Component Parent Information
+												</label>
+											</div>
+											
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Sub-System  Code</label>
+												<select data-placeholder="Select Sub-System Code"
+													class="form-control select" data-fouc>
+													<option></option>
+													<option value="HMT132">HMT132</option>
+													<option value="HMT133-x">HMT133-x</option>
+													<option value="Na">Na</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Sub-System  Name:</label>
+												<input type="text" class="form-control" placeholder="Sub-System 1" disabled>
+											</div>
+										</div>
+										<div class="col-md-12"><p class="font-weight-semibold"><span class="text-danger">Note: </span> Please select Sub-System tiering for Component if there's any.</p></div>
+										
+										<div class="col-md-12">
+											<div class="d-flex justify-content-between mb-2">
+												<label class="font-weight-semibold h6">Component Information
+												</label>
+											</div>
+										</div>
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Component Code:</label>
@@ -633,8 +661,7 @@
 												<div class="col-md-4">
 													<div class="form-group">
 														<label>Material Origin:</label>
-														<select 
-															data-placeholder="Select material origin"
+														<select data-placeholder="Select material origin"
 															class="form-control select" data-fouc>
 															<option></option>
 															<option value="Local">Local</option>
@@ -645,7 +672,7 @@
 												<div class="col-md-4">
 													<div class="form-group">
 														<label>Country Origin:</label>
-														<select  data-placeholder="Select country origin"
+														<select data-placeholder="Select country origin"
 															class="form-control select-search" data-fouc>
 															<option></option>
 															<option value="kuwaiti">Kuwaiti</option>
@@ -1045,5 +1072,6 @@
 	</div>
 </div>
 <!-- /full width modal -->
+
 
 </html>
