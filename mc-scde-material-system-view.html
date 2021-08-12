@@ -453,7 +453,7 @@
 					<div class="col-md-12">
 						<div class="card">
 							<div class="card-header bg-white header-elements-inline">
-								<h5 class="card-title font-weight-bold">Assign Sub-Contractor for Sub-System</h5>
+								<h5 class="card-title font-weight-bold">Material Tiering</h5>
 
 							</div>
 
@@ -475,7 +475,7 @@
 
 							<div class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
-										<span class="font-weight-semibold h6">Assigned Contractor List</span>
+										<span class="font-weight-semibold h6">Assigned Sub-Contractor List</span>
 										<button type="submit" class="btn bg-light ml-3" data-toggle="modal"
 											data-target="#assignContractor">Assign Sub-Contractor <i class="icon-users2 ml-1"></i></button>
 									</div>
@@ -488,6 +488,7 @@
 													<th>Company Registration Number(SSM)/<br>Unique ID</th>
 													<th>Organization / Company Name</th>
 													<th>Sub-Contractor Name</th>
+													<th>Material Type</th>
 													<th style="width: 18%;">Action</th>
 												</tr>
 											</thead>
@@ -497,7 +498,8 @@
 													<td>System 1</td>
 													<td>20190011235</td>
 													<td>Gamuda Berhad</td>
-													<th>Juhan Admirul</th>
+													<td>Juhan Admirul</td>
+													<td>Sub-System</td>
 													<td>
 														<button type="button" class="btn btn-light btn-icon m-1"><i
 																class="icon-trash-alt" data-popup="tooltip" title=""
@@ -510,7 +512,8 @@
 													<td>System 1</td>
 													<td>20190011235</td>
 													<td>Gamuda Berhad</td>
-													<th>Michael Lee</th>
+													<td>Michael Lee</td>
+													<td>Sub-System</td>
 													<td>
 														<button type="button" class="btn btn-light btn-icon m-1"><i
 																class="icon-trash-alt" data-popup="tooltip" title=""
@@ -619,7 +622,7 @@
 									</div>
 								
 
-									<div class="col-md-4">
+									<div class="col-md-6">
 
 										<div class="form-group">
 											<label>Company Registration Number(SSM) / Unique ID:</label>
@@ -629,7 +632,7 @@
 									</div>
 
 
-									<div class="col-md-4">
+									<div class="col-md-6">
 
 										<div class="form-group">
 											<label>Organization / Company Name:</label>
@@ -639,7 +642,7 @@
 									</div>
 
 
-									<div class="col-md-4">
+									<div class="col-md-6">
 										<div class="form-group">
 											<label>Sub-Contractor Name:</label>
 											<select data-placeholder="Select Sub-Contractor"
@@ -647,6 +650,19 @@
 												<option></option>
 												<option value="Juhan Admirul">Juhan Admirul</option>
 												<option value="	Michael Lee">	Michael Lee</option>
+											</select>
+										</div>
+									</div>	
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Material Type:</label>
+											<select data-placeholder="Select Material Type"
+												class="form-control select" data-fouc>
+												<option></option>
+												<option value="Sub-System">Sub-System</option>
+												<option value="Component">Component</option>
+												<option value="Sub-Component">Sub-Component</option>
+												<option value="Parts">Parts</option>
 											</select>
 										</div>
 									</div>	
