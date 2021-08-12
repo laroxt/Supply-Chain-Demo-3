@@ -319,7 +319,7 @@
 								<li class="nav-item"><a href="./mc-scde-material-system.html" class="nav-link active">
 										<i class="icon-file-text2 mr-2"></i>Materials Information</a>
 								</li>
-								
+
 							</ul>
 
 							<div class="card-body">
@@ -361,8 +361,8 @@
 														<th>Country Origin</th>
 														<th>Company Name</th>
 														<!-- <th>Description</th> -->
-														<th>Sub-System Code</th>
-														<th>Sub-System Name</th>
+														<th>Parent Material Code</th>
+														<th>Parent Material Name</th>
 														<th class="action-icon-width">Action</th>
 													</tr>
 												</thead>
@@ -386,14 +386,15 @@
 																	<i class="icon-menu7"></i>
 																</a>
 																<div class="dropdown-menu dropdown-menu-left">
-																	<a href="./mc-scde-material-component-view.html" class="dropdown-item"><i
+																	<a href="./mc-scde-material-component-view.html"
+																		class="dropdown-item"><i
 																			class="icon-file-eye"></i> View</a>
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-compose"></i> Edit</a>
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-trash-alt"></i>
 																		Delete</a>
-																	
+
 																</div>
 															</div>
 														</td>
@@ -425,7 +426,7 @@
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-trash-alt"></i>
 																		Delete</a>
-																	
+
 																</div>
 															</div>
 														</td>
@@ -510,32 +511,50 @@
 									<div class="row">
 										<div class="col-md-12">
 											<div class="d-flex justify-content-between mb-2">
-												<label class="font-weight-semibold h6">Component Parent Information
+												<label class="font-weight-semibold h6">Material Tiering Information
 												</label>
 											</div>
-											
 										</div>
-										<div class="col-md-6">
+
+										<div class="col-md-4">
 											<div class="form-group">
-												<label>Sub-System  Code</label>
-												<select data-placeholder="Select Sub-System Code"
+												<label>Type of Parent Material</label>
+												<select data-placeholder="Select Material Type"
 													class="form-control select" data-fouc>
 													<option></option>
-													<option value="HMT132">HMT132</option>
-													<option value="HMT133-x">HMT133-x</option>
-													<option value="Na">Na</option>
+													<option value="System">System</option>
+													<option value="Sub-System">Sub-System</option>
+												
 												</select>
 											</div>
 										</div>
 
-										<div class="col-md-6">
+										<div class="col-md-4">
 											<div class="form-group">
-												<label>Sub-System  Name:</label>
+												<label>Parent Material Code</label>
+												<select data-placeholder="Select Material Code"
+													class="form-control select" data-fouc disabled>
+													<option></option>
+													<option value="SP123-21">SP123-21</option>
+													<option value="SP123-22">SP123-22</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-4">
+											<div class="form-group">
+												<label>Parent Material Name:</label>
 												<input type="text" class="form-control" placeholder="Sub-System 1" disabled>
 											</div>
 										</div>
-										<div class="col-md-12"><p class="font-weight-semibold"><span class="text-danger">Note: </span> Please select Sub-System tiering for Component if there's any.</p></div>
-										
+
+										<div class="col-md-12">
+											<p class="font-weight-semibold"><span class="text-danger">Note: </span>
+												Please select material tiering for Component if there's any.</p>
+										</div>
+
+
+
 										<div class="col-md-12">
 											<div class="d-flex justify-content-between mb-2">
 												<label class="font-weight-semibold h6">Component Information

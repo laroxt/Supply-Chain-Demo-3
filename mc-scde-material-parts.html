@@ -359,8 +359,8 @@
 														<th>Country Origin</th>
 														<th>Company Name</th>
 														<!-- <th>Description</th> -->
-														<th>Sub-Component Code</th>
-														<th>Sub-Component Name</th>
+														<th>Parent Material Code</th>
+														<th>Parent Material Name</th>
 														<th class="action-icon-width">Action</th>
 													</tr>
 												</thead>
@@ -384,7 +384,7 @@
 																	<i class="icon-menu7"></i>
 																</a>
 																<div class="dropdown-menu dropdown-menu-left">
-																	<a href="#" class="dropdown-item"><i
+																	<a href="./mc-scde-material-parts-view.html" class="dropdown-item"><i
 																			class="icon-file-eye"></i> View</a>
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-compose"></i> Edit</a>
@@ -501,31 +501,49 @@
 									<div class="row">
 										<div class="col-md-12">
 											<div class="d-flex justify-content-between mb-2">
-												<label class="font-weight-semibold h6">Parts Parent Information
+												<label class="font-weight-semibold h6">Material Tiering Information
 												</label>
 											</div>
-											
 										</div>
-										<div class="col-md-6">
+
+										<div class="col-md-4">
 											<div class="form-group">
-												<label>Sub-Component Code</label>
-												<select data-placeholder="Select Sub-Component Code"
+												<label>Type of Parent Material</label>
+												<select data-placeholder="Select Material Type"
 													class="form-control select" data-fouc>
 													<option></option>
-													<option value="Gx3000">Gx3000</option>
-													<option value="Gx3200">Gx3200</option>
-													<option value="Na">Na</option>
+													<option value="System">System</option>
+													<option value="Sub-System">Sub-System</option>
+													<option value="Component">Component</option>
+													<option value="Sub-Component">Sub-Component</option>
+												
 												</select>
 											</div>
 										</div>
 
-										<div class="col-md-6">
+										<div class="col-md-4">
 											<div class="form-group">
-												<label>Sub-Component Name:</label>
+												<label>Parent Material Code</label>
+												<select data-placeholder="Select Material Code"
+													class="form-control select" data-fouc disabled>
+													<option></option>
+													<option value="SP123-21">SP123-21</option>
+													<option value="SP123-22">SP123-22</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-4">
+											<div class="form-group">
+												<label>Parent Material Name:</label>
 												<input type="text" class="form-control" placeholder="Sub-Component 1" disabled>
 											</div>
 										</div>
-										<div class="col-md-12"><p class="font-weight-semibold"><span class="text-danger">Note: </span> Please select Component tiering for Sub-Component if there's any.</p></div>
+
+										<div class="col-md-12">
+											<p class="font-weight-semibold"><span class="text-danger">Note: </span>
+												Please select material tiering for Parts if there's any.</p>
+										</div>
 
 										<div class="col-md-12">
 											<div class="d-flex justify-content-between mb-2">

@@ -439,8 +439,8 @@
 														<th>Country Origin</th>
 														<th>Company Name</th>
 														<!-- <th>Description</th> -->
-														<th>System Code</th>
-														<th>System Name</th>
+														<th>Parent Material Code</th>
+														<th>Parent Material Name</th>
 														<th class="action-icon-width">Action</th>
 													</tr>
 												</thead>
@@ -512,24 +512,32 @@
 										</div>
 									</div>
 								</div>
+
 							</div>
 							<div class="card-footer  d-sm-flex justify-content-sm-between align-items-sm-center">
 								<ul
 									class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
+									<button type="button" class="btn btn-light m-1"
+										onclick="location.href = './mc-scde-mf-machineries.html'"><i class="icon-arrow-left52 mr-1
+									"></i>Save & Previous</button>
 								</ul>
 
 								<ul
 									class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
-									<button type="button" class="btn btn-light m-1" onclick="location.href = '#'">Save &
-										Update<i class="icon-checkmark-circle ml-1"></i></button>
+									<button type="button" class="btn btn-light m-1" onclick="location.href = '#'">Save
+										Draft<i class="icon-floppy-disk ml-1"></i></button>
+									<button type="button" class="btn btn-light m-1" onclick="location.href = '#'">Submit
+										Supply Chain<i class="icon-paperplane ml-1"></i></button>
+
 								</ul>
 							</div>
 						</div>
+						<!--/ card content placement -->
 					</div>
-					<!--/ card content placement -->
 				</div>
 			</div>
 			<!-- /content area -->
+
 
 
 			<!-- Footer -->
@@ -556,8 +564,8 @@
 	</div>
 	<!-- /page content -->
 
-
 </body>
+
 <!-- Full width modal/ Add Sub-System -->
 <div id="addSubSystem" class="modal fade" tabindex="-1">
 	<div class="modal-dialog  modal-full">
@@ -579,31 +587,42 @@
 									<div class="row">
 										<div class="col-md-12">
 											<div class="d-flex justify-content-between mb-2">
-												<label class="font-weight-semibold h6">Sub-System Parent  Information
+												<label class="font-weight-semibold h6">Material Tiering Information
 												</label>
 											</div>
-											
 										</div>
-										<div class="col-md-6">
+
+										<div class="col-md-4">
 											<div class="form-group">
-												<label>System Code</label>
-												<select data-placeholder="Select System Code"
+												<label>Type of Parent Material</label>
+												<select data-placeholder="Select Material Type"
 													class="form-control select" data-fouc>
 													<option></option>
-													<option value="SP123-21">SP123-21</option>
-													<option value="SP123-22">SP123-22</option>
-													<option value="Na">Na</option>
+													<option value="System">System</option>
+												
 												</select>
 											</div>
 										</div>
 
-										<div class="col-md-6">
+										<div class="col-md-4">
 											<div class="form-group">
-												<label>System Name:</label>
+												<label>Parent Material Code</label>
+												<select data-placeholder="Select Material Code"
+													class="form-control select" data-fouc disabled>
+													<option></option>
+													<option value="SP123-21">SP123-21</option>
+													<option value="SP123-22">SP123-22</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-4">
+											<div class="form-group">
+												<label>Parent Material Name:</label>
 												<input type="text" class="form-control" placeholder="System 1" disabled>
 											</div>
 										</div>
-										<div class="col-md-12"><p class="font-weight-semibold"><span class="text-danger">Note: </span> Please select system tiering for Sub-System if there's any.</p></div>
+										<div class="col-md-12"><p class="font-weight-semibold"><span class="text-danger">Note: </span> Please select material tiering for Sub-System if there's any.</p></div>
 										
 										<div class="col-md-12">
 											<div class="d-flex justify-content-between mb-2">

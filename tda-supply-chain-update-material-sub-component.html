@@ -374,34 +374,34 @@
 													data-popup="tooltip" data-original-title="Add"></i></button>
 										</div>
 										<div class="table-responsive">
-											<table class="table datatable-basic ">
+											<table class=" table datatable-basic ">
 												<thead>
 													<tr>
-														<th>Sub-Component Code</th>
-														<th>Sub-Component Name</th>
+														<th>Component Code</th>
+														<th>Component Name</th>
 														<th>Brand</th>
 														<th>Model</th>
 														<th>Quantity</th>
 														<th>Country Origin</th>
 														<th>Company Name</th>
 														<!-- <th>Description</th> -->
-														<th>Component Code</th>
-														<th>Component Name</th>
+														<th>Parent Material Code</th>
+														<th>Parent Material Name</th>
 														<th class="action-icon-width">Action</th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<td>Gx3000</td>
-														<td>Sub-Component 1</td>
-														<td>Grimonprez</td>
-														<td>Gx300-Y</td>
-														<td>100</td>
-														<td>Malaysia</td>
-														<td>Grimonprez Transmission Gears</td>
-														<!-- <td>Sub-Component for Machine Y</td> -->
 														<td>T10202123</td>
 														<td>Component 1</td>
+														<td>KENENG</td>
+														<td>T10</td>
+														<td>30,000</td>
+														<td>Malaysia</td>
+														<td>KENENG</td>
+														<!-- <td>Component for general purpose</td> -->
+														<td>HMT132</td>
+														<td>Sub-System 1</td>
 														<td>
 															<div class="breadcrumb m-2">
 																<a href="#"
@@ -410,58 +410,81 @@
 																	<i class="icon-menu7"></i>
 																</a>
 																<div class="dropdown-menu dropdown-menu-left">
-																	<a href="#" class="dropdown-item"><i
+																	<a href="#"
+																		class="dropdown-item"><i
 																			class="icon-file-eye"></i> View</a>
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-compose"></i> Edit</a>
 																	<a href="#" class="dropdown-item"><i
 																			class="icon-trash-alt"></i>
 																		Delete</a>
-																	
-																</div>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>Gx3200</td>
-														<td>Sub-Component 2</td>
-														<td>Grimonprez</td>
-														<td>Gx320-X</td>
-														<td>130</td>
-														<td>Malaysia</td>
-														<td>Grimonprez Transmission Gears</td>
-														<!-- <td>Sub-Component for Machine X</td> -->
-														<td>T10202123</td>
-														<td>Component 1</td>
-														<td>
-															<div class="breadcrumb m-2">
-																<a href="#"
-																	class="breadcrumb-elements-item dropdown-toggle"
-																	data-toggle="dropdown" aria-expanded="false">
-																	<i class="icon-menu7"></i>
-																</a>
-																<div class="dropdown-menu dropdown-menu-left">
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-file-eye"></i> View</a>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-compose"></i> Edit</a>
-																	<a href="#" class="dropdown-item"><i
-																			class="icon-trash-alt"></i>
-																		Delete</a>
-																	
+
 																</div>
 															</div>
 														</td>
 
 													</tr>
-												<tbody>
+													<tr>
+														<td>T1020233x</td>
+														<td>Component 2</td>
+														<td>KENENG</td>
+														<td>T32</td>
+														<td>31,000</td>
+														<td>Malaysia</td>
+														<td>KENENG</td>
+														<!-- <td>Component for general purpose</td> -->
+														<td>HMT132</td>
+														<td>Sub-System 1</td>
+														<td>
+															<div class="breadcrumb m-2">
+																<a href="#"
+																	class="breadcrumb-elements-item dropdown-toggle"
+																	data-toggle="dropdown" aria-expanded="false">
+																	<i class="icon-menu7"></i>
+																</a>
+																<div class="dropdown-menu dropdown-menu-left">
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-file-eye"></i> View</a>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-compose"></i> Edit</a>
+																	<a href="#" class="dropdown-item"><i
+																			class="icon-trash-alt"></i>
+																		Delete</a>
+
+																</div>
+															</div>
+														</td>
+													</tr>
 											</table>
 										</div>
 									</div>
+
+
+
+
+
 								</div>
+
+							</div>
+							<div class="card-footer  d-sm-flex justify-content-sm-between align-items-sm-center">
+								<ul
+									class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
+									<button type="button" class="btn btn-light m-1"
+										onclick="location.href = './mc-scde-mf-machineries.html'"><i class="icon-arrow-left52 mr-1
+									"></i>Save & Previous</button>
+								</ul>
+
+								<ul
+									class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
+									<button type="button" class="btn btn-light m-1" onclick="location.href = '#'">Save
+										Draft<i class="icon-floppy-disk ml-1"></i></button>
+									<button type="button" class="btn btn-light m-1" onclick="location.href = '#'">Submit
+										Supply Chain<i class="icon-paperplane ml-1"></i></button>
+
+								</ul>
 							</div>
 						</div>
-						<!-- /basic bars -->
+						<!--/ card content placement -->
 					</div>
 				</div>
 			</div>
@@ -495,74 +518,85 @@
 
 </body>
 
-
-<!-- Full width modal/ Add Sub-Component -->
-<div id="addSubComponent" class="modal fade" tabindex="-1">
+<!-- Full width modal/ Add Component -->
+<div id="addComponent" class="modal fade" tabindex="-1">
 	<div class="modal-dialog  modal-full">
 		<div class="modal-content">
-
-
 			<div class="modal-body">
 				<div class="row">
-					
 					<div class="col-md-8 offset-md-2">
 						<div class="card">
 							<div class="card-header bg-white header-elements-inline">
-								<h5 class="card-title font-weight-bold">Add Sub-Component
+								<h5 class="card-title font-weight-bold">Add Component
 								</h5>
 							</div>
 							<div class="card-body">
 								<form action="#">
-
-
 									<div class="row">
-
 										<div class="col-md-12">
 											<div class="d-flex justify-content-between mb-2">
-												<label class="font-weight-semibold h6">Sub-Component Parent Information
+												<label class="font-weight-semibold h6">Material Tiering Information
 												</label>
 											</div>
-											
 										</div>
-										<div class="col-md-6">
+
+										<div class="col-md-4">
 											<div class="form-group">
-												<label>Component Code</label>
-												<select data-placeholder="Select Component Code"
+												<label>Type of Parent Material</label>
+												<select data-placeholder="Select Material Type"
 													class="form-control select" data-fouc>
 													<option></option>
-													<option value="T10202123">T10202123</option>
-													<option value="T1020233x">T1020233x</option>
-													<option value="Na">Na</option>
+													<option value="System">System</option>
+													<option value="Sub-System">Sub-System</option>
+												
 												</select>
 											</div>
 										</div>
 
-										<div class="col-md-6">
+										<div class="col-md-4">
 											<div class="form-group">
-												<label>Component Name:</label>
-												<input type="text" class="form-control" placeholder="Component 1" disabled>
-											</div>
-										</div>
-										<div class="col-md-12"><p class="font-weight-semibold"><span class="text-danger">Note: </span> Please select Component tiering for Sub-Component if there's any.</p></div>
-										
-										<div class="col-md-12">
-											<div class="d-flex justify-content-between mb-2">
-												<label class="font-weight-semibold h6">Sub-Component Information
-												</label>
+												<label>Parent Material Code</label>
+												<select data-placeholder="Select Material Code"
+													class="form-control select" data-fouc disabled>
+													<option></option>
+													<option value="SP123-21">SP123-21</option>
+													<option value="SP123-22">SP123-22</option>
+												</select>
 											</div>
 										</div>
 
-										<div class="col-md-6">
+										<div class="col-md-4">
 											<div class="form-group">
-												<label>Sub-Component Code:</label>
-												<input type="text" class="form-control" placeholder="Example. Gx3000">
+												<label>Parent Material Name:</label>
+												<input type="text" class="form-control" placeholder="Sub-System 1" disabled>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<p class="font-weight-semibold"><span class="text-danger">Note: </span>
+												Please select material tiering for Component if there's any.</p>
+										</div>
+
+
+
+										<div class="col-md-12">
+											<div class="d-flex justify-content-between mb-2">
+												<label class="font-weight-semibold h6">Component Information
+												</label>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Sub-Component Name:</label>
+												<label>Component Code:</label>
 												<input type="text" class="form-control"
-													placeholder="Example. Sub-Component 1">
+													placeholder="Example. T10202121">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Component Name:</label>
+												<input type="text" class="form-control"
+													placeholder="Example. Component 1">
 											</div>
 										</div>
 
@@ -570,17 +604,17 @@
 											<div class="row">
 												<div class="col-md-4">
 													<div class="form-group">
-														<label>Sub-Component Brand:</label>
+														<label>Component Brand:</label>
 														<input type="text" class="form-control"
-															placeholder="Example. Grimonprez">
+															placeholder="Example. KENENG">
 													</div>
 												</div>
 
 												<div class="col-md-4">
 													<div class="form-group">
-														<label>Sub-Component Model:</label>
+														<label>Component Model:</label>
 														<input type="text" class="form-control"
-															placeholder="Example. Gx300-Y">
+															placeholder="Example. T10">
 													</div>
 												</div>
 
@@ -588,12 +622,11 @@
 													<div class="form-group">
 														<label>Quantity:</label>
 														<input type="text" class="form-control"
-															placeholder="Example. 100">
+															placeholder="Example. 30,000">
 													</div>
 												</div>
 											</div>
 										</div>
-
 										<div class="col-md-12">
 											<div class="row">
 												<div class="col-md-4">
@@ -701,8 +734,7 @@
 										<div class="col-md-12">
 											<div class="form-group">
 												<label>Company Name:</label>
-												<input type="text" class="form-control"
-													placeholder="Example. Grimonprez Transmission Gears">
+												<input type="text" class="form-control" placeholder="Example. KENENG">
 											</div>
 										</div>
 
@@ -711,7 +743,7 @@
 											<div class="form-group">
 												<label>Description:</label>
 												<textarea type="text" class="form-control"
-													placeholder="Example. Sub-Component 1 for Machine Y"
+													placeholder="Example. Component 1 for general purpose"
 													rows="4"></textarea>
 											</div>
 										</div>
@@ -930,7 +962,9 @@
 										<div class="col-md-12">
 
 											<div class="d-flex justify-content-between">
-												<h6 class="font-weight-bold">Sub-Component Picture:</h6>
+												<h6 class="font-weight-bold">Component
+													Picture:
+												</h6>
 												<button type="button" class="btn bg-light btn-icon rounded-round mb-1"
 													data-toggle="modal" data-target="#"><i class="icon-plus3"
 														data-popup="tooltip" data-original-title="Add"></i></button>
@@ -939,8 +973,9 @@
 												<table class="table">
 													<thead>
 														<tr>
-															<th>Sub-Component Picture Description</th>
-															<th>Sub-Component Picture File</th>
+															<th>Component Picture Description
+															</th>
+															<th>Component Picture File</th>
 
 														</tr>
 													</thead>
