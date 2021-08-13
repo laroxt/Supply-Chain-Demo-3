@@ -488,8 +488,8 @@
 												<th>Component Name</th> -->
 												<!-- <th>Company Registration Number(SSM)/<br>Unique ID</th> -->
 												<th>Organization / Company Name</th>
-												<th>Sub-Contractor Name</th>
 												<th>Material Type</th>
+												<th>Material Category</th>
 												<th style="width: 18%;">Action</th>
 											</tr>
 										</thead>
@@ -499,8 +499,8 @@
 												<td>Component 1</td> -->
 												<!-- <td>20190011235</td> -->
 												<td>Gamuda Berhad</td>
-												<td>Juhan Admirul</td>
 												<td>Sub-Component</td>
+												<td>Sub-Component A</td>
 												<td>
 													<button type="button" class="btn btn-light btn-icon m-1"><i
 															class="icon-trash-alt" data-popup="tooltip" title=""
@@ -513,8 +513,8 @@
 												<td>Component 1</td> -->
 												<!-- <td>20190011235</td> -->
 												<td>Gamuda Berhad</td>
-												<td>Michael Lee</td>
 												<td>Sub-Component</td>
+												<td>Sub-Component B</td>
 												<td>
 													<button type="button" class="btn btn-light btn-icon m-1"><i
 															class="icon-trash-alt" data-popup="tooltip" title=""
@@ -574,10 +574,10 @@
 												</thead>
 												<tbody>
 													<tr>
-														<td>Gx3000</td>
-														<td>Sub-Component 1</td>
+														<td>Gx3000-A</td>
+														<td>Sub-Component 11</td>
 														<td>Grimonprez</td>
-														<td>Gx300-Y</td>
+														<td>Gx300-Y1</td>
 														<td>100</td>
 														<td>Malaysia</td>
 														<td>Grimonprez Transmission Gears</td>
@@ -605,10 +605,10 @@
 														</td>
 													</tr>
 													<tr>
-														<td>Gx3200</td>
-														<td>Sub-Component 2</td>
+														<td>Gx320-B</td>
+														<td>Sub-Component 22</td>
 														<td>Grimonprez</td>
-														<td>Gx320-X</td>
+														<td>Gx320-X2</td>
 														<td>130</td>
 														<td>Malaysia</td>
 														<td>Grimonprez Transmission Gears</td>
@@ -698,9 +698,7 @@
 <div id="assignContractor" class="modal fade" tabindex="-1">
 	<div class="modal-dialog modal-full">
 		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-			</div>
+			
 
 			<div class="modal-body">
 				<div class="row">
@@ -749,39 +747,40 @@
 
 										<div class="form-group">
 											<label>Organization / Company Name:</label>
-											<select data-placeholder="Select Material Type" class="form-control select"
+											<select data-placeholder="Select Organization / Company Name" class="form-control select"
 												data-fouc>
 												<option></option>
-												<option value="Company 1">Company 1</option>
-												<option value="Company 2">Company 2</option>
-												<option value="Company 3">Company 3</option>
-												<option value="Company 4">Company 4</option>
+												<option value="Gamuda Berhad">Gamuda Berhad</option>
 											</select>
 										</div>
 									</div>
 
 
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>Sub-Contractor Name:</label>
-											<select data-placeholder="Select Sub-Contractor" class="form-control select"
-												data-fouc>
-												<option></option>
-												<option value="Juhan Admirul">Juhan Admirul</option>
-												<option value="	Michael Lee"> Michael Lee</option>
-											</select>
-										</div>
-									</div>
+								
 									<div class="col-md-12">
 										<div class="form-group">
 											<label>Material Type:</label>
 											<select data-placeholder="Select Material Type" class="form-control select"
 												data-fouc>
 												<option></option>
-
+												<option value="Sub-Component">Sub-Component</option>
 												<option value="Parts">Parts</option>
 											</select>
 										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Material Category:</label>
+											<select data-placeholder="Select Material Category" class="form-control select"
+												data-fouc>
+												<option></option>
+												<option value="Sub-Component A">Sub-Component A</option>
+												<option value="Sub-Component B">Sub-Component B</option>
+												<option value="Sub-Component C">Sub-Component C</option>
+											</select>
+										</div>
+										<p class="text-muted">"Material Category" dropdown will affect upon "Material Type" selection.</p>
 									</div>
 								</div>
 								<div class="text-right">
