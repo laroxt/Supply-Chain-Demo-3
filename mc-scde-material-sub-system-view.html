@@ -488,7 +488,7 @@
 												<!-- <th>Company Registration Number(SSM)/<br>Unique ID</th> -->
 												<th>Organization / Company Name</th>
 												<th>Material Type</th>
-												<th>Material Category</th>
+												<th>General Material Information</th>
 												<th style="width: 18%;">Action</th>
 											</tr>
 										</thead>
@@ -499,7 +499,7 @@
 												<!-- <td>20190011235</td> -->
 												<td>Gamuda Berhad</td>
 												<td>Component</td>
-												<td>Component A</td>
+												<td>Required Component A for Sub-System A</td>
 												<td>
 													<button type="button" class="btn btn-light btn-icon m-1"><i
 															class="icon-trash-alt" data-popup="tooltip" title=""
@@ -513,7 +513,7 @@
 												<!-- <td>20190011235</td> -->
 												<td>Gamuda Berhad</td>
 												<td>Component</td>
-												<td>Component B</td>
+												<td>Required Component B for Sub-System A</td>
 												<td>
 													<button type="button" class="btn btn-light btn-icon m-1"><i
 															class="icon-trash-alt" data-popup="tooltip" title=""
@@ -770,16 +770,10 @@
 
 									<div class="col-md-12">
 										<div class="form-group">
-											<label>Material Category:</label>
-											<select data-placeholder="Select Material Category Material" class="form-control select"
-												data-fouc>
-												<option></option>
-												<option value="Component A">Component A</option>
-												<option value="Component B">Component B</option>
-												<option value="Component C">Component C</option>
-											</select>
+											<label>General Material Information:</label>
+											<input type="text" class="form-control" placeholder="Required Component A for Sub-System A">
 										</div>
-										<p class="text-muted">"Material Category" dropdown will affect upon "Material Type" selection.</p>
+										<p class="text-muted">Please insert brief information upon requested material.</p>
 									</div>
 								</div>
 								<div class="text-right">
