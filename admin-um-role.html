@@ -128,11 +128,11 @@
 							<ul class="media-list">
 								<li class="media">
 									<div class="mr-3">
-										<img src="./global_assets/images/placeholders/placeholder2.jpg" width="36"
+										<img src="./global_assets/images/placeholders/placeholder_u2.jpg" width="36"
 											height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
-										<a href="#" class="media-title font-weight-semibold">Aidan Chong</a>
+										<a href="#" class="media-title font-weight-semibold">TDA Admin</a>
 										<span class="d-block text-muted font-size-sm">has closed
 											Contract TDA/POD-CEMRT_20/2021/803/909</span>
 									</div>
@@ -155,16 +155,16 @@
 				<li class="nav-item dropdown dropdown-user">
 					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
 						data-toggle="dropdown">
-						<img src="./global_assets/images/placeholders/placeholder2.jpg" class="rounded-circle mr-2"
+						<img src="./global_assets/images/placeholders/placeholder_u2.jpg" class="rounded-circle mr-2"
 							height="34" alt="">
-						<span>Aidan Chong</span>
+						<span>TDA Admin</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
 						<a href="./admin-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
 							Account
 							Settings</a>
-						<a href="./index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
+						<a href="#" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
 					</div>
 				</li>
 			</ul>
@@ -232,9 +232,9 @@
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts" style="display:block;">
 								<li class="nav-item active"><a href="./admin-um-role.html"
 										class="nav-link active">Role<br>Add/Remove/Update
-										Roles</a></li>
+										Role</a></li>
 								<li class="nav-item"><a href="./admin-um-user.html" class="nav-link">User
-										<br>Add/Remove/Update Roles</a>
+										<br>Add/Remove/Update Role</a>
 								</li>
 							</ul>
 						</li>
@@ -251,7 +251,7 @@
 							</ul>
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
 								<li class="nav-item "><a href="./admin-update-sub-sector-list.html"
-										class="nav-link ">Sub-sector Type Dropdown</a></li>
+										class="nav-link ">Sub-Sector Type Dropdown</a></li>
 							</ul>
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
 								<li class="nav-item "><a href="./admin-update-product-services-list.html"
@@ -290,7 +290,7 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<h class="breadcrumb-item"> User Management</h>
-							<a href="#" class="breadcrumb-item"> Roles</a>
+							<a href="#" class="breadcrumb-item"> Role</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -303,7 +303,7 @@
 			<div class="content2 pt-0">
 				<div class="card">
 					<div class="card-header header-elements-inline bg-white">
-						<h5 class="card-title font-weight-bold">Roles</h5>
+						<h5 class="card-title font-weight-bold">Role</h5>
 						<div class="header-elements">
 
 
@@ -321,21 +321,20 @@
 					<table class="table datatable-basic role-type-list">
 						<thead>
 							<tr>
-								<th>Role</th>
-								<th>Permission</th>
-
+								<th>Role Name</th>
 								<th>Action</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>TDA</td>
-								<td><button class="btn btn-primary" data-target="#role-tda"
-										data-toggle="modal">Permission</button></td>
-
 								<td>
 									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
 											title="Edit"><i class="icon-compose"></i></button>
+									</span>
+									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
+											title="Permission" data-target="#role-tda" data-toggle="modal"><i
+												class=" icon-key"></i></button>
 									</span>
 									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
 											title="Remove"><i class="icon-trash-alt"></i></button>
@@ -358,12 +357,14 @@
 							</tr> -->
 							<tr>
 								<td>Main-Contractor</td>
-								<td><button class="btn btn-primary" data-target="#role-mcontractor"
-										data-toggle="modal">Permission</button></td>
 
 								<td>
 									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
 											title="Edit"><i class="icon-compose"></i></button>
+									</span>
+									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
+											title="Permission" data-target="#role-mcontractor" data-toggle="modal"><i
+												class=" icon-key"></i></button>
 									</span>
 									<button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
 										title="Remove"><i class="icon-trash-alt"></i></button>
@@ -372,12 +373,14 @@
 							</tr>
 							<tr>
 								<td>Sub-Contractor</td>
-								<td><button class="btn btn-primary" data-target="#role-scontractor"
-										data-toggle="modal">Permission</button></td>
 
 								<td>
 									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
 											title="Edit"><i class="icon-compose"></i></button>
+									</span>
+									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
+											title="Permission" data-target="#role-scontractor" data-toggle="modal"><i
+												class=" icon-key"></i></button>
 									</span>
 									<button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
 										title="Remove"><i class="icon-trash-alt"></i></button>
@@ -407,15 +410,21 @@
 										</div>
 										<div class="card-body">
 
-											<div class="form-group">
+											<div id=RoleForms>
+												<div class="form-group">
+													<label>Role Name:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. Managing Director">
+												</div>
+											</div>
+
+											<!-- <div class="form-group">
 												<label>Role:</label>
 												<select name="role" data-placeholder="Select user role"
 													class="form-control select-search" data-fouc id="RoleOptions"
 													onchange="check();">
 													<option></option>
 													<option value="">-- select one --</option>
-													<!-- <option value="ceo-office" disabled>CEO's Office
-													</option> -->
 													<option value="tda" disabled>TDA</option>
 													<option value="main-contractor" disabled>Main-Contractor
 													</option>
@@ -444,13 +453,14 @@
 														document.getElementById("RoleForms").style.display = "none";
 													}
 												}
-											</script>
+											</script> -->
 
 											<div class="text-right mt-2">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Cancel</button>
 												<button type="submit" class="btn btn-success">Save</button>
 											</div>
+
 										</div>
 									</div>
 								</div>
