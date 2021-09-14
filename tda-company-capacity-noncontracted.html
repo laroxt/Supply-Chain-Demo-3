@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>TDA | Gamuda Berhad | Contract Involvements</title>
+	<title>TDA | Gamuda Berhad | Company Capacity</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -56,6 +56,19 @@
 
 	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
 	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+	<script src="./global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+	<script src="./global_assets/js/demo_pages/extra_sweetalert.js"></script>
+
+	<script src="./global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+
+
+	<script src="./global_assets/js/plugins/notifications/pnotify.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="./global_assets/js/demo_pages/form_multiselect.js"></script>
+
+
+
 	<!-- /theme JS files -->
 
 </head>
@@ -164,7 +177,7 @@
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Jordan Helmi</a>
 										<span class="d-block text-muted font-size-sm">has closed
-											Contract TDA/POD-CEMRT_20/2021/803/909</span>
+											Project TDA/POD-CEMRT_20/2021/803/909</span>
 									</div>
 
 								</li>
@@ -299,8 +312,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="#" class="breadcrumb-item"> Company List</a>
-							<a href="#" class="breadcrumb-item"> Gamuda Berhad</a>
-							<a href="#" class="breadcrumb-item"> Contract Involvements</a>
+							<a href="#" class="breadcrumb-item"> Gamuda Berhad (Non-Contracted)</a>
+							<a href="#" class="breadcrumb-item"> Company Capacity</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -350,78 +363,170 @@
 							</div>
 
 							<ul class="nav nav-tabs nav-tabs-bottom bg-light" style="margin-bottom: 0;">
-								<li class="nav-item"><a href="./tda-company-info.html" class="nav-link "> <i
-											class="icon-file-text2 mr-2"></i>Company Information</a>
+								<!-- <li class="nav-item dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">General Company Information</a>
+									<div class="dropdown-menu dropdown-menu-left">
+										<a href="#bottom-tab3" class="dropdown-item">Company Information</a>
+										<a href="#bottom-tab4" class="dropdown-item">Company Contract Involvements</a>
+										<a href="#bottom-tab4" class="dropdown-item">Company Capacity</a>
+										<a href="#bottom-tab4" class="dropdown-item">Company Track Records</a>
+										
+									</div>
 								</li>
-								
-								<li class="nav-item"><a href="./tda-company-capacity.html" class="nav-link "> <i
-											class="icon-file-text2 mr-2"></i>Company Capacity</a>
-								</li>
-								<li class="nav-item"><a href="./tda-company-track-records.html" class="nav-link "> <i
-											class="icon-file-text2 mr-2"></i>Track Records</a>
-								</li>
-								<li class="nav-item"><a href="./tda-company-contract-involvement-list.html"
-									class="nav-link active"> <i class="icon-file-text2 mr-2"></i>Contract
-									Involvements</a>
-							</li>
-								<!-- <li class="nav-item"><a href="./tda-company-mf-machineries.html" class="nav-link "> <i
-											class="icon-file-text2 mr-2"></i>Machinery & Facilities Information</a>
-								</li>
-								<li class="nav-item"><a href="./tda-company-material-system.html" class="nav-link "> <i
-											class="icon-file-text2 mr-2"></i>Material Information</a>
+								<li class="nav-item dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Non-Contracted Supply Chain</a>
+									<div class="dropdown-menu dropdown-menu-left">
+										
+										<a href="#bottom-tab4" class="dropdown-item">Machinery & Facilities Information</a>
+										<a href="#bottom-tab4" class="dropdown-item">Material Information</a>
+									</div>
 								</li> -->
+
+								<li class="nav-item"><a href="./tda-company-info-noncontracted.html" class="nav-link ">
+										<i class="icon-file-text2 mr-2"></i>Company Information</a>
+								</li>
+								<!-- <li class="nav-item"><a href="./tda-company-contract-involvement-list.html"
+										class="nav-link "> <i class="icon-file-text2 mr-2"></i>Contract
+										Involvements</a>
+								</li> -->
+								<li class="nav-item"><a href="./tda-company-capacity-noncontracted.html"
+										class="nav-link active"> <i class="icon-file-text2 mr-2"></i>Company
+										Capacity</a>
+								</li>
+								<li class="nav-item"><a href="./tda-company-track-records-noncontracted.html"
+										class="nav-link "> <i class="icon-file-text2 mr-2"></i>Track Records</a>
+								</li>
+								<li class="nav-item"><a href="./tda-company-mf-machineries-noncontracted.html"
+										class="nav-link "> <i class="icon-file-text2 mr-2"></i>Machinery & Facilities
+										Information</a>
+								</li>
+								<li class="nav-item"><a href="./tda-company-material-system-noncontracted.html"
+										class="nav-link "> <i class="icon-file-text2 mr-2"></i>Material Information</a>
+								</li>
 							</ul>
 
 							<div class="card-body">
 								<div class="row">
-									<div class="col-md-12">
-										<div class="table-responsive mb-4">
-											<div class="d-flex justify-content-between align-items-center">
-												<span class="font-weight-semibold h6">Contract Involvements</span>
-												
-											</div>
-											<table class="table datatable-basic ">
-												<thead>
-													<tr>
-														<th>Contract Reference Number</th>
-														<th>Contract Name</th>
-														<th>Contractor Type</th>
-														<th>Action</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th>FQ01012021</th>
-														<td>Construction Maintenance LRT 5</td>
-														<td>Main-Contractor</td>
-														<td>
-															<button type="button" class="btn btn-light btn-icon"
-																data-popup="tooltip" title="" data-original-title="View"
-																onclick=" window.open('./tda-supply-chain-update-project.html','_blank')"><i
-																	class="icon-file-eye"></i></button>
-
-														</td>
-													</tr>
-													</tr>
-													<tr>
-														<th>FZ01022021</th>
-														<td>Construction Maintenance MRT 4</td>
-														<td>Sub-Contractor</td>
-														<td>
-															<button type="button" class="btn btn-light btn-icon"
-																data-popup="tooltip" title=""
-																data-original-title="View"><i
-																	class="icon-file-eye"></i></button>
-
-														</td>
-													</tr>
+									<style>
+										table.company-view-info td {
+											width: 20%;
+										}
+									</style>
 
 
-												</tbody>
-											</table>
-										</div>
+									<div class="table-responsive mb-4 ">
+										<table class="table table-bordered company-view-info">
+											<tbody>
+
+
+
+
+												<tr>
+													<td colspan="9" class="bg-light">
+														<h6>Company Capabilities</h6>
+													</td>
+
+												</tr>
+												<tr>
+													<td colspan="4">
+
+														<label class="font-weight-bold">Organization / Company Core
+															Competencies:</label>
+														<span class="float-right"><a href="#"
+																class="icon-compose list-icons-item"></a></span>
+														<h6><span class="badge badge-light m-1">Core 1</span><span
+																class="badge badge-light m-1">Core 2</span><span
+																class="badge badge-light m-1">Core 3</span></h6>
+
+													</td>
+													<td colspan="4">
+
+														<label class="font-weight-bold">Area of Company Specialist /
+															Expertise:</label>
+														<span class="float-right"><a href="#"
+																class="icon-compose list-icons-item"></a></span>
+														<h6><span class="badge badge-light m-1">Expertise 1</span><span
+																class="badge badge-light m-1">Expertise 2</span><span
+																class="badge badge-light m-1">Expertise 3</span></h6>
+
+													</td>
+												</tr>
+
+												<tr>
+													<td colspan="9" class="bg-light">
+														<h6>Manpower Classification</h6>
+													</td>
+
+												</tr>
+												<tr>
+													<td colspan="3">
+
+														<label class="font-weight-bold">No. of Management Level:</label>
+														<span class="float-right"><a href="#"
+																class="icon-compose list-icons-item"></a></span>
+														<h6>80</h6>
+
+													</td>
+													<td colspan="3">
+
+														<label class="font-weight-bold">No. of Technical:</label>
+														<span class="float-right"><a href="#"
+																class="icon-compose list-icons-item"></a></span>
+														<h6>15</h6>
+
+													</td>
+													<td colspan="3">
+
+														<label class="font-weight-bold">No. of Support Staff:</label>
+														<span class="float-right"><a href="#"
+																class="icon-compose list-icons-item"></a></span>
+														<h6>5</h6>
+
+													</td>
+												</tr>
+												<tr>
+													<td colspan="3">
+
+														<label class="font-weight-bold">No. of Bumiputera
+															Manpower:</label>
+														<span class="float-right"><a href="#"
+																class="icon-compose list-icons-item"></a></span>
+														<h6>30</h6>
+
+													</td>
+													<td colspan="3">
+
+														<label class="font-weight-bold">No. of Non-Bumiputera
+															Manpower:</label>
+														<span class="float-right"><a href="#"
+																class="icon-compose list-icons-item"></a></span>
+														<h6>15</h6>
+
+													</td>
+													<td colspan="3">
+
+														<label class="font-weight-bold">No. of Foreign Manpower:</label>
+														<span class="float-right"><a href="#"
+																class="icon-compose list-icons-item"></a></span>
+														<h6>25</h6>
+
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
 								</div>
+							</div>
+							<div class="card-footer  d-sm-flex justify-content-sm-between align-items-sm-center">
+								<ul
+									class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
+								</ul>
+
+								<ul
+									class="pagination pagination-sm pagination-pager justify-content-between mt-2 mt-sm-0">
+									<button type="button" class="btn btn-light m-1" onclick="location.href = '#'">Save &
+										Update<i class="icon-checkmark-circle ml-1"></i></button>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -455,8 +560,7 @@
 	</div>
 	<!-- /page content -->
 
-	<!-- /Form DOM -->
-	<script src="./global_assets/js/main/formDOM.js"></script>
+
 </body>
 
 </html>

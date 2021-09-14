@@ -9147,7 +9147,7 @@ a.text-dark:focus, a.text-dark:hover {
 .card-body-content {
     flex: 1 1 auto;
     padding: 1.25rem;
-    height: 7rem;
+    /* height: 7rem; */
     background-color: #373234;
     color: white;
     border-radius: 0px 0px 15px 15px;
